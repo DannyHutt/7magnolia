@@ -187,7 +187,7 @@ function App() {
             <div className="partnersCard">
               <img src={avatarImg} className="avatar-img" alt="Person" />
               <div className="partnersContent">
-                <h4>Dan Gauthier</h4>
+                <h4>Humma Sheikh</h4>
                 <p><b>Founder, Principal Design Wizard</b><br/>
                 Dan has been working for over 200 years and has maybe been on vacation twice. He wakes up at 6:00am, puts on a pair of bathing suit shorts and a winter sweater and watches videos about the meaning of life and other existential philosophies. He likes to start his day with some coffee in his giant mug of milk and eats a bowl of stress for breakfast. 
                 </p>
