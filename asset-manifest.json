@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/7magnolia/static/css/main.14cbe951.css",
-    "main.js": "/7magnolia/static/js/main.f5a7e61b.js",
+    "main.js": "/7magnolia/static/js/main.21f8ee6f.js",
     "static/js/787.c7c7b87f.chunk.js": "/7magnolia/static/js/787.c7c7b87f.chunk.js",
     "static/media/flower.png": "/7magnolia/static/media/flower.021aba97e5f53bbd7929.png",
     "static/media/tempAvatar.png": "/7magnolia/static/media/tempAvatar.6dd0d6da1ef08c33e9b8.png",
@@ -19,11 +19,11 @@
     "static/media/linkedin-icon.svg": "/7magnolia/static/media/linkedin-icon.1b28b2c87f29d6789ce2fbdd138164bf.svg",
     "static/media/health-icon.svg": "/7magnolia/static/media/health-icon.2407e1a55f6ffe29b42fbe9f09b1376d.svg",
     "main.14cbe951.css.map": "/7magnolia/static/css/main.14cbe951.css.map",
-    "main.f5a7e61b.js.map": "/7magnolia/static/js/main.f5a7e61b.js.map",
+    "main.21f8ee6f.js.map": "/7magnolia/static/js/main.21f8ee6f.js.map",
     "787.c7c7b87f.chunk.js.map": "/7magnolia/static/js/787.c7c7b87f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14cbe951.css",
-    "static/js/main.f5a7e61b.js"
+    "static/js/main.21f8ee6f.js"
   ]
 }
