@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/7magnolia/static/css/main.14cbe951.css",
-    "main.js": "/7magnolia/static/js/main.21f8ee6f.js",
+    "main.css": "/7magnolia/static/css/main.c0404b52.css",
+    "main.js": "/7magnolia/static/js/main.5fcfd866.js",
     "static/js/787.c7c7b87f.chunk.js": "/7magnolia/static/js/787.c7c7b87f.chunk.js",
     "static/media/flower.png": "/7magnolia/static/media/flower.021aba97e5f53bbd7929.png",
     "static/media/tempAvatar.png": "/7magnolia/static/media/tempAvatar.6dd0d6da1ef08c33e9b8.png",
@@ -18,12 +18,12 @@
     "index.html": "/7magnolia/index.html",
     "static/media/linkedin-icon.svg": "/7magnolia/static/media/linkedin-icon.1b28b2c87f29d6789ce2fbdd138164bf.svg",
     "static/media/health-icon.svg": "/7magnolia/static/media/health-icon.2407e1a55f6ffe29b42fbe9f09b1376d.svg",
-    "main.14cbe951.css.map": "/7magnolia/static/css/main.14cbe951.css.map",
-    "main.21f8ee6f.js.map": "/7magnolia/static/js/main.21f8ee6f.js.map",
+    "main.c0404b52.css.map": "/7magnolia/static/css/main.c0404b52.css.map",
+    "main.5fcfd866.js.map": "/7magnolia/static/js/main.5fcfd866.js.map",
     "787.c7c7b87f.chunk.js.map": "/7magnolia/static/js/787.c7c7b87f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14cbe951.css",
-    "static/js/main.21f8ee6f.js"
+    "static/css/main.c0404b52.css",
+    "static/js/main.5fcfd866.js"
   ]
 }
