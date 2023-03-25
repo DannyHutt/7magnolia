@@ -24,11 +24,11 @@ function App() {
           <nav>
             <img src={logo} className="App-logo" alt="logo" />
             <ul className="main-nav">
-              <li className="on"><a href='#'>Our Expertise</a></li>
-              <li><a href='#'>Industries</a></li>
-              <li><a href='#'>Our Values</a></li>
-              <li><a href='#'>About 7Magnolia</a></li>
-              <li><a href='#'>Work With Us</a></li>
+              <li className="on"><a href='#SectionExpertise'>Our Expertise</a></li>
+              <li><a href='#SectionIndustries'>Industries</a></li>
+              {/* <li><a href='#'>Our Values</a></li> */}
+              <li><a href='#SectionAbout'>About 7Magnolia</a></li>
+              <li><a href='#SectionContact'>Work With Us</a></li>
             </ul>
           </nav>
         </div>
@@ -39,7 +39,8 @@ function App() {
             <div className="hero-content">
               <div className="content-block">
                 <h1>Empowering humans through intentional design</h1>
-                <p>Whether it's an application, design system, or website, we are dedicated to delivering exceptional work based on our clients’ individual project needs. Our agency is committed to helping businesses thrive while creating accessible and memorable experiences for humans. </p>
+                <p>Our team is committed to helping businesses thrive by creating inclusive and engaging digital experiences for everyone. Whether a design system, website, or application, we deliver exceptional work based on your project aspirations.
+ </p>
                 <button className="btn-primary">Contact Us</button>
               </div>
               <div className="accentContainer">
@@ -51,11 +52,12 @@ function App() {
           <div className="whiteSquare"></div>
       </section>
 
-    <section className="expertise">
+    <section id="SectionExpertise" className="expertise">
         <div className="Content-wrap">
           <div className="sectionHead">
             <h2>Expertise</h2>
-            <p>from concept to production, design systems, inclusive practices and accessiblity standards</p>
+            <p>From concept to production, we lead with best practices in User Experience, Visual Design, and Development to bring your vision to life.
+</p>
           </div>
           <div className="row">
 
@@ -64,7 +66,8 @@ function App() {
                 <img src={uxIcon} className="ux-icon" alt="UX" />
                 <h4>UX</h4>
               </div>
-              <p>We approach each challenge with a deep understanding of the needs, goals, and motivations....</p>
+              <p>We approach each project with a deep understanding of the needs, goals, and motivations of users, ensuring inclusive practices and accessibility standards are centered in design.
+</p>
             </div>
 
             <div className="card">
@@ -72,7 +75,8 @@ function App() {
                 <img src={designIcon} className="design-icon" alt="Visual Design" />
                 <h4>Visual Design</h4>
               </div>
-              <p>We approach each challenge with a deep understanding of the needs, goals, and motivations....</p>
+              <p>Art direction, visual experience, and aesthetics compliment UX strategy and facilitate desired user behaviors through production assets.
+</p>
             </div>
 
             <div className="card">
@@ -80,7 +84,7 @@ function App() {
                 <img src={devIcon} className="dev-icon" alt="Development" />
                 <h4>Development</h4>
               </div>
-              <p>We approach each challenge with a deep understanding of the needs, goals, and motivations....</p>
+              <p>Our flexible model for web and app development services supports customizable and scalable products, tailored to your needs and optimized for a seamless transition across devices.</p>
             </div>
 
           </div>
@@ -99,12 +103,13 @@ function App() {
       </section>
 
 
-      <section className="industries">
+      <section id="SectionIndustries" className="industries">
         <div className="Content-wrap">
 
           <div className="industriesHead">
             <h3>Industries</h3>
-            <p>All the cool industries we work with, blah blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blahblah blah blah blah blah blah </p>
+            <p>Our cross-cutting approach to design is valued by a wide range of industry professionals. From finance and tech to healthcare and education, we deepen the connection between our clients and their users through informed design.
+ </p>
           </div>
 
           <div className="industriesContent">
@@ -132,19 +137,19 @@ function App() {
         </div>
       </section>
 
-      <section className="aboutUs">
+      <section id="SectionAbout" className="aboutUs">
         <div className="Content-wrap">
 
           <div className="aboutHead">
             <h2>About 7Magnolia</h2>
-            <p>7Magz does a lot of cool stuff and we know a lot of cool people that can also do realy cool stuff. </p>
+            <p>7Magnolia is a digital design firm that empowers </p>
           </div>
           <div className="aboutBody">
             <img src={avatarImg} className="avatar-img" alt="Person" />
             <div className="aboutContent">
               <h4>Dan Gauthier</h4>
-              <p><b>Founder, Principal Design Wizard</b><br/>
-              Dan has been working for over 200 years and has maybe been on vacation twice. He wakes up at 6:00am, puts on a pair of bathing suit shorts and a winter sweater and watches videos about the meaning of life and other existential philosophies. He likes to start his day with some coffee in his giant mug of milk and eats a bowl of stress for breakfast. From 7:00am-7:00pm, he works to the soothing sounds of Phish and is either frozen for hours in his office or he is doing his daily 5 miles of pacing around the house. By 8:00pm Dan will then cook an elaborate 5 course dinner and end his day with a spoonful (or two) of Gunta’s Ganja Goop and pass out on his 12 person leather couch.
+              <p><b>Founder, Principal Designer</b><br/>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruddo eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.
               </p>
               <img src={linkedInIcon} className="linkedin" alt="Linkedin" />
             </div>
@@ -153,7 +158,7 @@ function App() {
         </div>
       </section>
 
-      <section className="partners">
+      <section id="SectionPartners" className="partners">
         <div className="Content-wrap">
         <div className="aboutHead">
             <h2>Our Creative Partners</h2>
@@ -166,8 +171,9 @@ function App() {
               <img src={avatarImg} className="avatar-img" alt="Person" />
               <div className="partnersContent">
                 <h4>Lauren McAuliffe</h4>
-                <p><b>Principal Design Lady, Cleaning Lady, and Chief Napper</b><br/>
-                Lauren likes to work 5 hours tops per day then she spends 3 hours on her daily self-care routine of chakra cleansing, yoga, and taking naps with little boop. When she isn’t working, she spends her time reminding Dan to eat or drink water and helps keep the laundry under control. 
+                <p><b>Principal Designer</b><br/>
+                  Lauren is a neurodivergent designer and advocate for inclusive and accessible practices. For more than a decade visual design has been her area of expertise and in recent years moved into a hybrid space where she can also dig deep into UX challenges and alleviate pain points. Her proudest moments are when she can craft experiences that are not only beautiful, but also create a sense of belonging.
+                  <br/>Lauren is a keynote speaker, sharing best practices and inspiring others to design through an Inclusive and Neurodiverse lens.
                 </p>
                 <img src={linkedInIcon} className="linkedin" alt="Linkedin" />
               </div>
@@ -177,8 +183,8 @@ function App() {
               <img src={avatarImg} className="avatar-img" alt="Person" />
               <div className="partnersContent">
                 <h4>Janner Doherty</h4>
-                <p><b>Chief Science Lady and Content Specialist</b><br/>
-                Janner knows all the science and can teach it to anyone. She is also really good with words and writes ridiculously awesome content. She likes to hike mountains and eat burgers. If you spill something and can’t figure out how to remove a stain, she can help you get it out AND turn it into a science lesson. 1,2,3 SCIENCE!!
+                <p><b>Content Specialist</b><br/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruddo eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.
                 </p>
                 <img src={linkedInIcon} className="linkedin" alt="Linkedin" />
               </div>
@@ -188,15 +194,37 @@ function App() {
               <img src={avatarImg} className="avatar-img" alt="Person" />
               <div className="partnersContent">
                 <h4>Humma Sheikh</h4>
-                <p><b>Founder, Principal Design Wizard</b><br/>
-                Dan has been working for over 200 years and has maybe been on vacation twice. He wakes up at 6:00am, puts on a pair of bathing suit shorts and a winter sweater and watches videos about the meaning of life and other existential philosophies. He likes to start his day with some coffee in his giant mug of milk and eats a bowl of stress for breakfast. 
+                <p><b>Behavior Change Designer</b><br/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruddo eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun. 
                 </p>
                 <img src={linkedInIcon} className="linkedin" alt="Linkedin" />
               </div>
             </div>
-
           </div>
 
+        </div>
+      </section>
+
+      <section id="SectionContact" className="contactUs">
+        <div className="Content-wrap">
+          <div className="contactUs-wrap">
+            <div className="col col1">
+            <img src={uxIcon} className="ux-icon" alt="UX" />
+              <h2>Work With Us</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruddo eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p>
+            </div>
+            <div className="col col2">
+              <div>
+                <input type="text" placeholder="Name"></input>
+                <input type="email" placeholder="Email"></input>
+                <input type="text" placeholder="Company"></input>
+                <textarea placeholder="Message"></textarea>
+                <div>
+                  <button className="btn-primary btn-submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
