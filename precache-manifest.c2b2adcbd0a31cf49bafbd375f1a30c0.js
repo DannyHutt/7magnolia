@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "0cb456407aee495c5eb1",
-    "url": "/7magnolia/static/css/main.0fd8db48.chunk.css"
+    "revision": "e9672d2561ee6b18b7f7",
+    "url": "/7magnolia/static/css/main.df61b329.chunk.css"
   },
   {
-    "revision": "0cb456407aee495c5eb1",
-    "url": "/7magnolia/static/js/main.9476ff74.chunk.js"
+    "revision": "e9672d2561ee6b18b7f7",
+    "url": "/7magnolia/static/js/main.d297379f.chunk.js"
   },
   {
     "revision": "41bf3bd059a059baed0d",
@@ -56,20 +56,20 @@ self.__precacheManifest = [
     "url": "/7magnolia/static/media/plus-icon.d166ced6.svg"
   },
   {
-    "revision": "eb48cc30218e15d2ed41ef21c53db76a",
-    "url": "/7magnolia/static/media/pig-icon.eb48cc30.svg"
+    "revision": "89ee213102ad758d88d6ae7a73be3847",
+    "url": "/7magnolia/static/media/pig-icon.89ee2131.svg"
   },
   {
-    "revision": "7a00094d79e625c736cc0c5d3bfa4ce2",
-    "url": "/7magnolia/static/media/tech-icon.7a00094d.svg"
+    "revision": "f37d8cc1eae4e4325a563641163ccec1",
+    "url": "/7magnolia/static/media/tech-icon.f37d8cc1.svg"
   },
   {
-    "revision": "607e7ac3a7f2e17c8050b190a11e54b6",
-    "url": "/7magnolia/static/media/education-icon.607e7ac3.svg"
+    "revision": "50dcdf425bfaee194bbf7b344c6da9e1",
+    "url": "/7magnolia/static/media/education-icon.50dcdf42.svg"
   },
   {
-    "revision": "883d79cb7c5c3d76ca910d141e3fb51d",
-    "url": "/7magnolia/static/media/health-icon.883d79cb.svg"
+    "revision": "b23ade9a4b42c40cc442c89e6f43c1f2",
+    "url": "/7magnolia/static/media/health-icon.b23ade9a.svg"
   },
   {
     "revision": "399809a7635a16c6cdf6dba3875632a8",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/7magnolia/static/media/flower.18c2a00c.png"
   },
   {
-    "revision": "26a17702401dc33b58c11270a19ac866",
+    "revision": "e831f92638bf72311644b1bd478c79f4",
     "url": "/7magnolia/index.html"
   }
 ];
