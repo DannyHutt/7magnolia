@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "e9672d2561ee6b18b7f7",
-    "url": "/7magnolia/static/css/main.df61b329.chunk.css"
+    "revision": "00f5d4d6aa906859c6ef",
+    "url": "/7magnolia/static/css/main.6a73a1b8.chunk.css"
   },
   {
-    "revision": "e9672d2561ee6b18b7f7",
+    "revision": "00f5d4d6aa906859c6ef",
     "url": "/7magnolia/static/js/main.d297379f.chunk.js"
   },
   {
@@ -88,11 +88,11 @@ self.__precacheManifest = [
     "url": "/7magnolia/static/media/janna-headshot.18e4c182.png"
   },
   {
-    "revision": "18c2a00cadd770b536a209cd3652e31d",
-    "url": "/7magnolia/static/media/flower.18c2a00c.png"
+    "revision": "b3a686183557a271dbe6fc4c1b6e706d",
+    "url": "/7magnolia/static/media/flower.b3a68618.png"
   },
   {
-    "revision": "e831f92638bf72311644b1bd478c79f4",
+    "revision": "b1e4dc8a3c76d6c5d5f1945d6fd93402",
     "url": "/7magnolia/index.html"
   }
 ];
