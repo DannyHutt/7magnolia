@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "bb27c54651e750d64842",
+    "revision": "6aef7c7046541908bd4e",
     "url": "/7magnolia/static/css/main.4dcb57e8.chunk.css"
   },
   {
-    "revision": "bb27c54651e750d64842",
-    "url": "/7magnolia/static/js/main.0ddc82ae.chunk.js"
+    "revision": "6aef7c7046541908bd4e",
+    "url": "/7magnolia/static/js/main.9255d988.chunk.js"
   },
   {
     "revision": "cd0bc2ac02638b866131",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/7magnolia/static/media/flower.18c2a00c.png"
   },
   {
-    "revision": "56e5894a8ee88bc90fc5d4ba611a7e6d",
+    "revision": "020b93d21086919969d0c26021b68a26",
     "url": "/7magnolia/index.html"
   }
 ];
