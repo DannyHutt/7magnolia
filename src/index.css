@@ -4,12 +4,17 @@
   --darkGrey: #2D2D2D;
   --lightGrey: #F1F1F1;
   --lightBlue: #E7F8FF;
+  --purpleBlue: #2A335F;
 
   --fontSize-body: 16px;
 }
 
 .gradientBG {
   background: linear-gradient(199.2deg, #F50A0C 0%, #EB5CE0 47.48%, #07B9FE 100%);
+}
+
+* {
+  box-sizing: border-box
 }
 
 html {
@@ -45,6 +50,10 @@ textarea {
 
 a {
   color:var(--blue);
+}
+
+p {
+  max-width:900px;
 }
 
 h1,h2,h3,.quote {

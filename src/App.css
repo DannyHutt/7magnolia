@@ -119,23 +119,31 @@ nav {
   margin-bottom:40px;
 }
 
-button {
+button,
+a.btn-primary,
+a.btn-secondary {
   font-weight:600;
   padding: 10px 36px;
   font-size: 16px;
   border:0;
   border-radius:30px;
   line-height:28px;
+  display: inline-block;
+  cursor:pointer;
 }
 
-.btn-primary {
+.btn-primary,
+a.btn-primary {
   color:#fff;
-  background:var(--pink);
+  background:var(--blue);
+  text-decoration: none;
 }
 
-.btn-secondary {
+.btn-secondary,
+a.btn-secondary {
   color:#fff;
   background:var(--darkGrey);
+  text-decoration: none;
 }
 
 .accentContainer {
@@ -212,8 +220,9 @@ button {
 }
 
 .industries {
-  background:var(--lightBlue);
+  background:var(--purpleBlue);
   padding:132px 0;
+  color:#fff;
 }
 
 .industries .Content-wrap {
@@ -242,14 +251,21 @@ button {
 .aboutUs .Content-wrap {
   padding-top:120px;
   padding-bottom:100px;
-  border-bottom: 2px solid #D2D2D2;
 }
 
 .aboutHead {
   display:flex;
   flex-direction:column;
   align-items: center;
+  text-align: center;
   margin-bottom:64px;
+  padding-bottom:64px;
+  border-bottom: 2px solid #D2D2D2;
+}
+
+.aboutUs {
+
+  background:var(--lightGrey);
 }
 
 .aboutBody {
@@ -280,6 +296,14 @@ button {
   color:var(--blue);
 }
 
+.partnersHead {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+  padding-bottom:64px;
+}
+
 .partnersBody {
   display:flex;
 }
@@ -301,6 +325,7 @@ button {
 
 .contactUs-wrap .col {
   flex:1;
+  margin-right: 5%;
 }
 
 .contactUs-wrap .col2 div:first-child {
@@ -404,6 +429,8 @@ footer .mark {
     padding-left:0;
   }
 
+   /* -- partners section --*/
+
   .partnersBody {
     display: flex;
     flex-direction: column;
@@ -414,8 +441,14 @@ footer .mark {
     margin-bottom:32px;
   }
 
+   /* -- contact section --*/
+
   .contactUs-wrap {
     flex-direction: column;
+  }
+
+  .contactUs-wrap .col1 {
+    margin-bottom:48px;
   }
 
   .contactUs-wrap .col2 div:first-child {
