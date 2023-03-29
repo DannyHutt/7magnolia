@@ -1,31 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "6aef7c7046541908bd4e",
-    "url": "/7magnolia/static/css/main.4dcb57e8.chunk.css"
+    "revision": "d9cbfb377ed3bb59f2df",
+    "url": "/7magnolia/static/css/main.17e88cc2.chunk.css"
   },
   {
-    "revision": "6aef7c7046541908bd4e",
-    "url": "/7magnolia/static/js/main.9255d988.chunk.js"
+    "revision": "d9cbfb377ed3bb59f2df",
+    "url": "/7magnolia/static/js/main.a93052a1.chunk.js"
   },
   {
-    "revision": "cd0bc2ac02638b866131",
-    "url": "/7magnolia/static/js/runtime~main.7f004e70.js"
+    "revision": "41bf3bd059a059baed0d",
+    "url": "/7magnolia/static/js/runtime~main.3e6935c6.js"
   },
   {
-    "revision": "470043ee201461ab2280",
-    "url": "/7magnolia/static/js/2.d095bb04.chunk.js"
+    "revision": "569f9a185d184e491a98",
+    "url": "/7magnolia/static/js/2.fd5ad666.chunk.js"
   },
   {
-    "revision": "77da778a10b57eb72fd7",
-    "url": "/7magnolia/static/js/3.5d65379c.chunk.js"
-  },
-  {
-    "revision": "6667e33b019d777020e994ef8bab97c7",
-    "url": "/7magnolia/static/media/tempAvatar.6667e33b.png"
+    "revision": "03c2247ebef71b42a125",
+    "url": "/7magnolia/static/js/3.133d7e0c.chunk.js"
   },
   {
     "revision": "f5fc5e60175a43bc2116710ef82d185c",
     "url": "/7magnolia/static/media/linkedin-icon.f5fc5e60.svg"
+  },
+  {
+    "revision": "6667e33b019d777020e994ef8bab97c7",
+    "url": "/7magnolia/static/media/tempAvatar.6667e33b.png"
   },
   {
     "revision": "6da749c06225e64e62415a3f13a8c333",
@@ -80,11 +80,19 @@ self.__precacheManifest = [
     "url": "/7magnolia/static/media/hands-icon.65675256.svg"
   },
   {
+    "revision": "76a7d799c9a8c8c93278bd1071b5524e",
+    "url": "/7magnolia/static/media/lauren-headshot.76a7d799.png"
+  },
+  {
+    "revision": "18e4c18230be8bd084bedc9d770ceace",
+    "url": "/7magnolia/static/media/janna-headshot.18e4c182.png"
+  },
+  {
     "revision": "18c2a00cadd770b536a209cd3652e31d",
     "url": "/7magnolia/static/media/flower.18c2a00c.png"
   },
   {
-    "revision": "020b93d21086919969d0c26021b68a26",
+    "revision": "d277b4e4dc3c7fd80560fef1938b924f",
     "url": "/7magnolia/index.html"
   }
 ];
