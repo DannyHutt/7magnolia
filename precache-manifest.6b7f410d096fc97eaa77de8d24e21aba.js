@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "7a52bd9fab37db7b2555",
-    "url": "/7magnolia/static/css/main.838a1c70.chunk.css"
+    "revision": "dc5ee0b16abc50223264",
+    "url": "/7magnolia/static/css/main.1a93f48d.chunk.css"
   },
   {
-    "revision": "7a52bd9fab37db7b2555",
-    "url": "/7magnolia/static/js/main.10043bb2.chunk.js"
+    "revision": "dc5ee0b16abc50223264",
+    "url": "/7magnolia/static/js/main.ad270b87.chunk.js"
   },
   {
-    "revision": "9f5b6657c3418ad0e803",
-    "url": "/7magnolia/static/js/runtime~main.46d3f29c.js"
+    "revision": "a3db6b646a758f26508d",
+    "url": "/7magnolia/static/js/runtime~main.5a2ac6ff.js"
   },
   {
-    "revision": "96a3e10e419949dbe5b6",
-    "url": "/7magnolia/static/js/2.714ce39a.chunk.js"
+    "revision": "818ae6116e5984bb3d60",
+    "url": "/7magnolia/static/js/2.7f8ee72d.chunk.js"
   },
   {
-    "revision": "279e4fca54e5d8e57f31",
-    "url": "/7magnolia/static/js/3.33a557c1.chunk.js"
+    "revision": "629666658164b43f59b6",
+    "url": "/7magnolia/static/js/3.45bd1f93.chunk.js"
   },
   {
     "revision": "f5fc5e60175a43bc2116710ef82d185c",
@@ -84,6 +84,14 @@ self.__precacheManifest = [
     "url": "/7magnolia/static/media/values-icon.09341a8c.svg"
   },
   {
+    "revision": "a41af2a4967b3be210787e2708d95f95",
+    "url": "/7magnolia/static/media/rounded-inner.a41af2a4.svg"
+  },
+  {
+    "revision": "e1744d4e1f84a39844e00e9518ec4a93",
+    "url": "/7magnolia/static/media/back-to-top-icon.e1744d4e.svg"
+  },
+  {
     "revision": "76a7d799c9a8c8c93278bd1071b5524e",
     "url": "/7magnolia/static/media/lauren-headshot.76a7d799.png"
   },
@@ -100,7 +108,7 @@ self.__precacheManifest = [
     "url": "/7magnolia/static/media/flower.b3a68618.png"
   },
   {
-    "revision": "2b2c1c5eb3c6c4083a1a2a794cf81a83",
+    "revision": "30e8e443bdb1ea7ae355c65099b2e4ae",
     "url": "/7magnolia/index.html"
   }
 ];
