@@ -1,7 +1,7 @@
 {
   "main.css": "/7magnolia/static/css/main.528de97a.chunk.css",
-  "main.js": "/7magnolia/static/js/main.950c740a.chunk.js",
-  "main.js.map": "/7magnolia/static/js/main.950c740a.chunk.js.map",
+  "main.js": "/7magnolia/static/js/main.55b73f79.chunk.js",
+  "main.js.map": "/7magnolia/static/js/main.55b73f79.chunk.js.map",
   "runtime~main.js": "/7magnolia/static/js/runtime~main.4bbd5d80.js",
   "runtime~main.js.map": "/7magnolia/static/js/runtime~main.4bbd5d80.js.map",
   "static/js/2.d2f5e286.chunk.js": "/7magnolia/static/js/2.d2f5e286.chunk.js",
@@ -9,7 +9,7 @@
   "static/js/3.1e9de0c8.chunk.js": "/7magnolia/static/js/3.1e9de0c8.chunk.js",
   "static/js/3.1e9de0c8.chunk.js.map": "/7magnolia/static/js/3.1e9de0c8.chunk.js.map",
   "index.html": "/7magnolia/index.html",
-  "precache-manifest.a7bdee44031ad8326a0646d4a61c0fb2.js": "/7magnolia/precache-manifest.a7bdee44031ad8326a0646d4a61c0fb2.js",
+  "precache-manifest.6c90b7acefb806e01b3f6be2c054d0bb.js": "/7magnolia/precache-manifest.6c90b7acefb806e01b3f6be2c054d0bb.js",
   "service-worker.js": "/7magnolia/service-worker.js",
   "static/css/main.528de97a.chunk.css.map": "/7magnolia/static/css/main.528de97a.chunk.css.map",
   "static/media/7m.svg": "/7magnolia/static/media/7m.a42d6f93.svg",
