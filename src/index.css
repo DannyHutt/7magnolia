@@ -1,16 +1,66 @@
 :root {
   --blue: #0E5EF1;
+  --darkPurple: #1e2133;
+  --paleBlue: #73BCFF;
   --pink: #E00E62;
   --darkGrey: #2D2D2D;
   --lightGrey: #F1F1F1;
+  --mediumGrey: #747474;
   --lightBlue: #E7F8FF;
+  --textBlue:#D4DAF8;
   --purpleBlue: #2A335F;
-
+  --brightPurpleBlue: #303D81;
+  --white: #fff;
+  --black: #000;
+  --purpleSlate: #3C4570;
   --fontSize-body: 16px;
+  --extraDarkGrey:#212121;
+  --extraDarkPurple:#15171f;
 }
+
 
 .gradientBG {
   background: linear-gradient(199.2deg, #F50A0C 0%, #EB5CE0 47.48%, #07B9FE 100%);
+}
+
+/* 2am - 5am */
+.gradient2a-5a{
+  background: linear-gradient(199.2deg, #7000FF 0%, #00183D 100%);
+  
+}
+
+/* 6am - 9am */
+.gradient6a-9a{
+  background: linear-gradient(199.2deg, #9E00FF 0%, #000000 100%);
+  
+}
+
+/* 10am - 1pm */
+.gradient10a-1p{
+  /* background: linear-gradient(199.2deg, #FF0099 0%, #002264 100%); */
+  background: linear-gradient(185.2deg,#fcff8c,#002d3e);
+  /* background: linear-gradient(185.2deg,#0fff00,#002d3e); */
+  
+}
+
+/* 2pm - 5pm */
+.gradient2p-5p{
+  background: linear-gradient(185.2deg,#ff00de,#0098ff); 
+  /* background: linear-gradient(185.2deg,#0086ff,#a3d3ff); this was the default daytime style */
+
+  
+}
+
+/* 6pm - 9pm */
+.gradient6p-9p{
+  background: linear-gradient(199.2deg, #ae00ff 0.62%, #00183D 100%);
+  
+}
+
+/* 10pm - 1am */
+.gradient10p-1a{
+  background: linear-gradient(199.2deg, #3500CC 0%, #000000 100%);
+  
 }
 
 * {
@@ -54,9 +104,18 @@ a {
 
 p {
   max-width:900px;
+  
 }
 
-h1,h2,h3,.quote {
+.section2Col p,
+.industries p,
+.contactUs p,
+.aboutHead p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+h1,.h2,.h3,.quote {
   font-family: 'DM Serif Display', serif;
 }
 
@@ -67,21 +126,31 @@ h1{
   margin:0;
 }
 
-h2{
+h1.display {
+  font-size:72px;
+  line-height:85px;
+  color:var(--purpleSlate);
+}
+
+h1.display .highlight {
+  color: #2993fe;
+}
+
+.h2{
   font-size: 40px;
-  line-height: 48px;
+  line-height: 52px;
   margin:0;
   font-weight:normal;
 }
 
-h3{
+.h3{
   font-size: 34px;
   line-height: 48px;
   font-weight:normal;
   margin:0;
 }
 
-h4{
+.h4{
   font-size: 24px;
   line-height: 40px;
   margin:0;
@@ -108,4 +177,18 @@ code {
     monospace;
 }
 
+@media (min-width: 2000px) {
+  h1.display {
+    font-size: 94px;
+    line-height: 115px;
+  }
+}
 
+/* @media (prefers-color-scheme: dark) {
+ body,
+ input,
+ textarea,
+ button{
+  color:#fff;
+ }
+} */
