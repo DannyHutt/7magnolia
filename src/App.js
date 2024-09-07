@@ -4,6 +4,9 @@ import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
+  Link,
+  NavLink,
+  Router,
   Outlet,
 } from "react-router-dom"
 
@@ -22,49 +25,16 @@ import iconSyncDark from './images/icon-refresh-dark.svg';
 import iconCheckDark from './images/icon-checkmark-dark.svg';
 
 import HomePage from './HomePage';
-import A11yPage from './A11yPage';
+import A11yPage from './pages/A11yPage';
+
+import ContactPage from './pages/ContactUs';
+import AboutPage from './pages/About';
+import ServicesPage from './pages/Services';
+import ValuesPage from './pages/Values';
 
 //import ContactForm from './Components/ContactForm';
 
 import { useState, useEffect } from "react";
-
-// Add an event listener listening for scroll
-//window.addEventListener("scroll", navHighlighter);
-
-// function navHighlighter() {
-  
-//   // Get current scroll position
-//   let scrollY = window.pageYOffset;
-//   const sections = document.querySelectorAll("section[id]");
-//   // Now we loop through sections to get height, top and ID values for each
-//   sections.forEach(current => {
-//     const sectionHeight = current.offsetHeight;
-//     const sectionTop = current.offsetTop - 50;
-
-// console.log(document.querySelectorAll("section[id]"));
-//     var sectionId = current.getAttribute("id");
-    
-//     /*
-//     - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
-//     - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
-//     */
-
-//     if (
-//       scrollY > sectionTop &&
-//       scrollY <= sectionTop + sectionHeight
-//     ){
-//       document.querySelector(".navbar a[href*=" + sectionId + "]").parentElement.classList.add("on");
-//     } else {
-//       document.querySelector(".navbar a[href*=" + sectionId + "]").parentElement.classList.remove("on");
-//     }
-//   });
-// }
-
-// var themeSetting = 'sync';
-
-// function setTheme(theme) {
-//   useThemeDetector(theme);
-// }
 
 const useThemeDetector = () => {
   const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches; // ENABLES DARK MODE SUPPORT
@@ -165,10 +135,27 @@ function App() {
       path: "/accessibility-statement",
       element: <A11yPage />,
     },
+    {
+      path: "/about",
+      element: <AboutPage />,
+    },
+    {
+      path: "/services",
+      element: <ServicesPage />,
+    },
+    {
+      path: "/values",
+      element: <ValuesPage />,
+    },
+    {
+      path: "/contact",
+      element: <ContactPage />,
+    },
   ])
 
   const isSysThemeDark = useThemeDetector();
   const [theme, setTheme] = useState("sync");
+  const [currentPage, setCurrentPage] = useState("sync");
   //const [isDarkTheme, setIsDarkTheme] = useState(false);
   let isDarkTheme = false;
   switch(theme){
@@ -190,14 +177,24 @@ function App() {
     setTheme(theme);
   }
 
+  const handleChangePage = (currentPage) => {
+    setCurrentPage(currentPage);
+  }
+
   const [themeMenuState, setThemeMenuState] = useState(false)
+  const [workMenuState, setWorkMenuState] = useState(false)
 
   const handleThemeClick = () => {
     setThemeMenuState(prevThemeMenuState => !prevThemeMenuState);
   };
 
+  const handleWorkClick = () => {
+    setWorkMenuState(prevWorkMenuState => !prevWorkMenuState);
+  };
+
   const handleClickOutside = () => {
     setThemeMenuState(false);
+    setWorkMenuState(false); // can these be less specific?
   };
 
   const ref = useOutsideClick(handleClickOutside);
@@ -209,14 +206,37 @@ function App() {
         <div className="Content-wrap">
           <nav>
             <a className='logo-link' aria-label="7Magnolia home" tabIndex="0" role="link" href="/"><img src={isDarkTheme ? logoDark: logo} className="App-logo" alt="7Magnolia" /></a>
-            <ul className="main-nav">
-              {/* <li><a href='#SectionExpertise'>Our Expertise</a></li>
-              <li><a href='#SectionIndustries'>Industries</a></li>
-              <li><a href='#SectionOurValues'>Our Values</a></li>
-              <li><a href='#SectionAbout'>About 7Magnolia</a></li>
-              <li><a className="btn-primary" href='#SectionContact'>Work With Us</a></li> */}
-              <li ref={ref} className="li-theme">
-                <button aria-label='change theme' id='Theme-btn' onClick={handleThemeClick} aria-expanded={themeMenuState} className="theme-btn">Theme</button>
+            
+              <ul className="main-nav">
+
+                <li className={currentPage === 'about' ? 'active': ''}>
+                Who We Are
+                </li>
+
+                <li className='mag-nav-dd-item' ref={ref} >
+                  <button aria-label='Our Work' id='Work-btn' onClick={handleWorkClick} aria-expanded={workMenuState} className={currentPage === 'testimonial' ? 'our-work-btn active': 'our-work-btn'}>Our Work</button>
+                  <ul aria-labelledby="Theme-btn" role="tablist" className={"popover-menu "+ workMenuState}>
+                    <li className={currentPage === 'sync' ? 'theme-default active': 'theme-default'}>
+                      <a className='pop-menu-button' href="">NeuroX</a>
+                    </li>
+                    <li className={currentPage === 'light' ? 'theme-light active': 'theme-light'}>
+                      <a className='pop-menu-button' href="">EstateSpace</a>
+                    </li>
+                    <li className={currentPage === 'dark' ? 'theme-dark active': 'theme-dark'}>
+                      <a className='pop-menu-button' href="">QuantFu</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li className={currentPage === 'services' ? 'active': ''}><a href='#SectionOurValues'>Our Services</a></li>
+                <li className={currentPage === 'values' ? 'active': ''}><a href='#SectionAbout'>Values & Initiatives</a></li>
+                
+              </ul>
+           
+            <div class='nav-tools'>
+              <a className="btn-secondary" href='#SectionContact'>Contact Us</a>
+              <div ref={ref} className="li-theme">
+                <button aria-label='change theme' id='Theme-btn' onClick={handleThemeClick} aria-expanded={themeMenuState} className="theme-btn"></button>
                 <ul aria-labelledby="Theme-btn" role="tablist" className={"popover-menu "+ themeMenuState}>
                   <li className={theme === 'sync' ? 'theme-default active': 'theme-default'}>
                     <button id='tab1' role="tab" tabIndex="0" aria-selected={theme === 'sync'} onClick={() => handleChangeTheme('sync')} className="btn-theme-default">OS Default</button>
@@ -228,8 +248,9 @@ function App() {
                     <button id='tab3' role="tab" tabIndex="0" aria-selected={theme === 'dark'} onClick={() => handleChangeTheme('dark')} className="btn-theme-dark">Dark theme</button>
                   </li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+
+            </div>
           </nav>
         </div>
       </header>
@@ -239,11 +260,6 @@ function App() {
 
         <RouterProvider router={router} />
 
-        {/* <Routes>
-          <Route path="./" component={HomePage} />
-          <Route path="./accessibility-statement" component={A11yPage} />
-        </Routes> */}
-      
       </SharedContext.Provider>
       </main>
 

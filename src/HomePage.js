@@ -211,16 +211,17 @@ const HomePage = () => {
  return (
   <div>
     <ParallaxProvider>
-      <section aria-labelledby="Page-heading" className={`hero gradient${timeRange}`}>
+      <section aria-labelledby="Page-heading">
 
         <div className="hero-content">
-          <img aria-hidden="true" src={isDarkTheme ? roundedInnerIconDark : roundedInnerIcon} className="rounded-inner" alt="" />
+          {/* <img aria-hidden="true" src={isDarkTheme ? roundedInnerIconDark : roundedInnerIcon} className="rounded-inner" alt="" /> */}
+          
           <div className="Content-wrap">
             <div className="content-block">
-              <h1 id="Page-heading" className="display"><span className="highlight">Empower Your Business</span> with Cutting-Edge Digital Solutions</h1>
+              <h1 id="Page-heading" className="display">We <span className="highlight">Design</span> digital products & elevate brands</h1>
               <a className="btn-primary" href="#SectionContact">Let's Talk!</a>
             </div>
-            <div className="accentContainer">
+            {/* <div className="accentContainer">
 
               <svg className="accentGraphic" width="520" height="706" viewBox="0 0 520 706" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity={isDarkTheme ? "0.4" : "0.2"}>
@@ -228,17 +229,17 @@ const HomePage = () => {
                 </g>
               </svg>
 
-            </div>
+            </div> */}
           </div>
         </div>
 
-        <div className="hero-flower">
+        {/* <div className="hero-flower">
           <Parallax translateY={[0, 30]}>
             <div className={`flower flower${timeRange}`}>
 
             </div>
           </Parallax>
-        </div>
+        </div> */}
         </section>
 
 
@@ -377,10 +378,10 @@ const HomePage = () => {
               <span aria-hidden className="pronoun">He/Him</span>
               <span className="visually-hidden">Pronouns: He Him</span>
 
-              <span aria-hidden className="title">Co-Founder | CDO</span>
-              <span className="visually-hidden">Title: Co-Founder & CDO</span>
+              <span aria-hidden className="title">Co-Founder | CEO</span>
+              <span className="visually-hidden">Title: Co-Founder & CEO</span>
 
-              <p>Dan is a designer and engineer with more than 15 years experience bridging the gap between both disciplines. This hybrid lens allows him to carve out a unique space in the industry as a leader who can guide the production process end-to-end.</p>
+              <p>Dan is a designer and engineer with two decades of experience bridging the gap between both disciplines. This hybrid lens allows him to carve out a unique space in the industry as a leader who can guide the production process end-to-end.</p>
               <a className="linkedIn-btn" href="https://www.linkedin.com/in/dan-gauthier-0a34b72"><img src={linkedInIcon} className="linkedin" alt="Linkedin" /></a>
             </div>
           </div>
