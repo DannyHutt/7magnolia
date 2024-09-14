@@ -16,52 +16,16 @@
   --fontSize-body: 16px;
   --extraDarkGrey:#212121;
   --extraDarkPurple:#15171f;
+
+  --pinkAA: #FF3B89;
+  --darkest: #120802;
+  --espressoBean:#190D05;
+  --peachyCream:#FCF5E5;
+  --deepMaroon:#261125;
+  --lightMaroon:#3E1C2E;
+
 }
 
-
-.gradientBG {
-  background: linear-gradient(199.2deg, #F50A0C 0%, #EB5CE0 47.48%, #07B9FE 100%);
-}
-
-/* 2am - 5am */
-.gradient2a-5a{
-  background: linear-gradient(199.2deg, #7000FF 0%, #00183D 100%);
-  
-}
-
-/* 6am - 9am */
-.gradient6a-9a{
-  background: linear-gradient(199.2deg, #9E00FF 0%, #000000 100%);
-  
-}
-
-/* 10am - 1pm */
-.gradient10a-1p{
-  /* background: linear-gradient(199.2deg, #FF0099 0%, #002264 100%); */
-  background: linear-gradient(185.2deg,#fcff8c,#002d3e);
-  /* background: linear-gradient(185.2deg,#0fff00,#002d3e); */
-  
-}
-
-/* 2pm - 5pm */
-.gradient2p-5p{
-  background: linear-gradient(185.2deg,#ff00de,#0098ff); 
-  /* background: linear-gradient(185.2deg,#0086ff,#a3d3ff); this was the default daytime style */
-
-  
-}
-
-/* 6pm - 9pm */
-.gradient6p-9p{
-  background: linear-gradient(199.2deg, #ae00ff 0.62%, #00183D 100%);
-  
-}
-
-/* 10pm - 1am */
-.gradient10p-1a{
-  background: linear-gradient(199.2deg, #3500CC 0%, #000000 100%);
-  
-}
 
 * {
   box-sizing: border-box
@@ -107,46 +71,66 @@ p {
   
 }
 
+
+.color-pinkAA {
+  color:var(--pinkAA) !important;
+}
+
+
 .section2Col p,
 .industries p,
 .contactUs p,
 .aboutHead p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
-h1,.h2,.h3,.quote {
+h1,
+.h1,
+.quote {
   font-family: 'DM Serif Display', serif;
 }
 
-h1{
-  font-size: 56px;
+.h2, .h3 {
+  font-family: 'Inter';
+}
+
+h1,
+.h1{
+  font-size: 64px;
   line-height: 72px;
   font-weight:normal;
   margin:0;
 }
 
-h1.display {
-  font-size:72px;
-  line-height:85px;
+.our-work-frame {
+  padding:80px 0;
+}
+
+h1.display,
+.h1.display {
+  line-height: calc(8vw);
+  font-size: calc(7vw);
   color:var(--purpleSlate);
 }
 
-h1.display .highlight {
-  color: #2993fe;
+.card-group {
+  display: flex;
+  gap: 3%;
 }
 
 .h2{
-  font-size: 40px;
-  line-height: 52px;
-  margin:0;
-  font-weight:normal;
+  line-height: calc(5vw);
+  font-size: calc(4.3vw);
+  margin:32px 0;
+
+  font-weight:bold;
 }
 
 .h3{
   font-size: 34px;
   line-height: 48px;
-  font-weight:normal;
+  font-weight:bold;
   margin:0;
 }
 
@@ -171,18 +155,37 @@ textarea {
   font-size:var(--fontSize-body);
 }
 
+.eyebrow {
+  font-family: 'Inter';
+  font-size:12px;
+  text-transform: uppercase;
+  color:var(--mediumGrey);
+  display: block;
+  padding-bottom:24px;
+  margin-top:16px;
+  margin-bottom:16px;
+  border-bottom:1px solid rgba(45,45,45,0.1);
+  letter-spacing: 3px;
+  font-weight:bold;
+  &.large{
+    font-size: calc(2vw);
+    line-height:calc(3vw);
+    letter-spacing:6px;
+    border-bottom:0;
+    padding:0;
+  }
+}
+
+.li-theme {
+  display: none;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-@media (min-width: 2000px) {
-  h1.display {
-    font-size: 94px;
-    line-height: 115px;
-  }
-}
+
 
 /* @media (prefers-color-scheme: dark) {
  body,
