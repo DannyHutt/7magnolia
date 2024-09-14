@@ -190,8 +190,9 @@ const Root = () => {
  return (
 
     
-    <div className={isDarkTheme ? "App darkTheme" : "App lightTheme"} id="App">
-      <a className='top-banner'><b>View our recent webinar</b> &nbsp; <span>- Dealing with shitty bosses</span></a>
+    // <div className={isDarkTheme ? "App darkTheme" : "App lightTheme"} id="App">
+    <div className="App darkTheme" id="App">
+      {/* <a className='top-banner'><b>View our recent webinar</b> &nbsp; <span>- Dealing with shitty bosses</span></a> */}
       <header className="navbar section">
         <div className="Content-wrap">
           <nav className={"mobile-nav "+ mobileNavState}>

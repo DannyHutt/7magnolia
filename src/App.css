@@ -29,7 +29,7 @@ body {
 .navbar {
   padding: 21px 0;
   /* position: sticky; */
-  top: 44px;
+  top: 0;
   z-index: 500;
   /* container-type:inline-size; */
   position: absolute;
@@ -946,17 +946,6 @@ footer .mark {
   height: 86px;
 }
 
-.page-a11y {
-  display: flex;
-  justify-content: center;
-}
-.page-a11y .Content-wrap {
-  margin-bottom: 100px;
-}
-.page-a11y h1 {
-  margin-top: 135px;
-  margin-bottom: 65px;
-}
 .page-a11y p {
   font-size: 24px;
   line-height: 40px;
@@ -985,10 +974,10 @@ footer .mark {
   color: var(--pink);
 }
 .App.darkTheme .page-a11y p {
-  color: var(--textBlue);
+  color: var(--peachyCream);
 }
 .App.darkTheme .page-a11y a {
-  color: var(--pink);
+  color: var(--pinkAA);
 }
 .App.darkTheme .page-a11y a:hover {
   background: rgba(255, 255, 255, 0.1);
