@@ -142,7 +142,7 @@ const HomePage = () => {
                     <img aria-hidden="true" src={esPreview} alt="Two designers collaborating and looking at a computer screen" />
                 </div>
                 <div className="col col2">
-                    <h2 aria-label='augmentation and customization' id='Augmentation-heading' className="eyebrow">UX/UI • Develop • design system</h2>
+                    <h2 aria-label='augmentation and customization' id='Augmentation-heading' className="eyebrow">UX/UI • Development • design system</h2>
                     <h3 className="h3">EstateSpace</h3>
                     <p>A multifaceted project including web and native app design, company website, and brand refresh, all unified by a comprehensive design system. </p>
                     <NavLink className='btn-secondary' to='./work/es'>Read More</NavLink>
