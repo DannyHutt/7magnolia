@@ -1,0 +1,53 @@
+/* [project]/src/Components/SecondaryButton.css [app-client] (css) */
+.secondary-button {
+  cursor: pointer;
+  border-radius: var(--Border-radius-Buttons, 31px);
+  border: 2px solid var(--Borders-Secondary-Button);
+  color: var(--Foreground-Secondary-button-text);
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  background: none;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  transition: background-color .16s ease-in-out, color .16s ease-in-out, transform .12s;
+  display: inline-flex;
+}
+
+.secondary-button:focus {
+  box-shadow: 0 0 0 4px var(--Borders-subtle-outline, #0000001f);
+  outline: none;
+}
+
+.secondary-button:hover:not(:disabled) {
+  background: var(--Background-Secondary-hover);
+  color: var(--Foreground-Secondary-button-text);
+}
+
+.secondary-button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.secondary-button[disabled] {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.secondary-button--large {
+  padding: var(--Padding-padding-16, 16px) var(--Padding-padding-48, 48px);
+  font-size: var(--Text-Body-L, 20px);
+  line-height: var(--Text-Body-L-line-height, 32px);
+}
+
+.secondary-button--small {
+  padding: var(--Padding-padding-12, 10px) var(--Padding-padding-24, 24px);
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-default-line-height, 24px);
+}
+
+.secondary-button .label {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=src_Components_SecondaryButton_css_bad6b30c._.single.css.map*/

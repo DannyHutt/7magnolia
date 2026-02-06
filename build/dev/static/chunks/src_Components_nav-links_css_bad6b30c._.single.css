@@ -1,0 +1,134 @@
+/* [project]/src/Components/nav-links.css [app-client] (css) */
+.navbar {
+  background: var(--Background-Nav-blur-bg);
+  box-shadow: 0 4px 30px var(--Background-Nav-blur-bg);
+  backdrop-filter: blur(32px);
+  border-bottom: 1px solid var(--Borders-nav-border);
+  padding: var(--Padding-flex-24-16) var(--Padding-application-h, 48px);
+  z-index: 100;
+  border-radius: 0;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  position: unset;
+  padding: unset;
+  width: 100%;
+  max-width: var(--Max-content-width, 1500px);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+nav .nav-mobile-tools {
+  display: flex;
+}
+
+nav .nav-mobile-tools .nav-mobile-menu-button, nav .nav-mobile-tools .nav-mobile-close-button {
+  border: 0;
+  align-items: center;
+  display: none;
+}
+
+nav .nav-mobile-tools button {
+  background: none;
+  padding: 0;
+}
+
+.main-nav {
+  gap: 32px;
+  display: flex;
+}
+
+.nav-tools {
+  display: flex;
+}
+
+.main-nav > li {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.main-nav li a {
+  color: var(--Foreground-Body-text);
+  border-bottom: 3px solid #0000;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.main-nav li a.active {
+  border-bottom: 3px solid var(--Borders-Pink-underline);
+  opacity: 1;
+}
+
+.main-nav li a:hover {
+  opacity: 1;
+}
+
+.nav-tools .li-theme {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  nav .main-nav {
+    display: none;
+  }
+
+  nav .nav-tools {
+    width: 100%;
+    display: none;
+  }
+
+  .mobile-nav-true nav {
+    padding: var(--Padding-flex-24-16) var(--Padding-application-h, 48px);
+    background: var(--Background-App);
+    flex-direction: column;
+    align-items: flex-start;
+    transition: background-color .3s;
+    position: fixed;
+    inset: 0;
+  }
+
+  .mobile-nav-true .main-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    display: flex;
+  }
+
+  .mobile-nav-true .nav-tools {
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin-bottom: 64px;
+    display: flex;
+  }
+
+  .navbar.mobile-nav-true {
+    backdrop-filter: none;
+  }
+
+  .nav-mobile-menu-button {
+    display: flex !important;
+  }
+
+  nav .nav-mobile-tools {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=src_Components_nav-links_css_bad6b30c._.single.css.map*/

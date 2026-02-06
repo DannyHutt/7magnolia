@@ -1,0 +1,400 @@
+/* [project]/src/index.css [app-client] (css) */
+:root {
+  --Color-Black: #000;
+  --Color-Black-15: #00000026;
+  --Color-Black-1: #0000000a;
+  --Color-Blue-Dark: #0e5ef1;
+  --Color-Blue-Light: #5c8ef3;
+  --Color-Dark-grey: #2d2d2d;
+  --Color-Darkest: #120802;
+  --Color-Deep-Maroon: #261125;
+  --Color-Deep-Maroon-35: #26112559;
+  --Color-Espresso-Bean: #190d05;
+  --Color-Green-Dark: #275741;
+  --Color-Green-Light: #53c390;
+  --Color-Grey: #baafa8;
+  --Color-Light-Maroon: #3e1c2e;
+  --Color-Light-grey: #e8e2de;
+  --Color-Orange-Dark: #512f0a;
+  --Color-Orange-Light: #f7931a;
+  --Color-Peach: #ffbe90;
+  --Color-Peach-15: #ffbe901a;
+  --Color-Peachy-Cream: #fff5ee;
+  --Color-Peachy-Cream-Dark: #feeee3;
+  --Color-Peachy-Cream-45: #fff5ee73;
+  --Color-Pink-Dark: #dd0b5f;
+  --Color-Pink-Light: #ff3b89;
+  --Color-White: #fff;
+  --Color-White-15: #ffffff26;
+  --Color-White-35: #ffffff59;
+  --Color-White-1: #ffffff0a;
+  --Corners-Radius-35: 35px;
+  --Corners-Radius-16: 16px;
+  --Corners-Radius-50: 50px;
+  --Spacing-spacing-650: 52px;
+  --Spacing-spacing-600: 48px;
+  --Spacing-spacing-550: 44px;
+  --Spacing-spacing-500: 40px;
+  --Spacing-spacing-450: 36px;
+  --Spacing-spacing-400: 32px;
+  --Spacing-spacing-350: 28px;
+  --Spacing-spacing-300: 24px;
+  --Spacing-spacing-250: 20px;
+  --Spacing-spacing-200: 16px;
+  --Spacing-spacing-150: 12px;
+  --Spacing-spacing-100: 8px;
+  --Spacing-spacing-050: 4px;
+  --Typography-line-height-88: 88px;
+  --Typography-line-height-64: 64px;
+  --Typography-line-height-56: 56px;
+  --Typography-line-height-48: 48px;
+  --Typography-line-height-40: 40px;
+  --Typography-line-height-36: 36px;
+  --Typography-line-height-32: 32px;
+  --Typography-line-height-24: 24px;
+  --Typography-line-height-20: 20px;
+  --Typography-line-height-16: 16px;
+  --Typography-font-size-84: 84px;
+  --Typography-font-size-56: 56px;
+  --Typography-font-size-48: 48px;
+  --Typography-font-size-36: 36px;
+  --Typography-font-size-32: 32px;
+  --Typography-font-size-28: 28px;
+  --Typography-font-size-24: 24px;
+  --Typography-font-size-20: 20px;
+  --Typography-font-size-18: 18px;
+  --Typography-font-size-16: 16px;
+  --Typography-font-size-14: 14px;
+  --Typography-font-size-12: 12px;
+  --Typography-font-size-10: 10px;
+  --Image-bg: "light";
+  --Max-content-width: 1500px;
+  --Paragraph-max-width: 62.5rem;
+}
+
+[data-theme="light"] {
+  --Background-App: var(--Color-Peachy-Cream);
+  --Background-App-Inset: var(--Color-Peachy-Cream-Dark);
+  --Background-Primary-button: var(--Color-Pink-Dark);
+  --Background-Primary-hover: var(--Color-Light-Maroon);
+  --Background-Secondary-hover: var(--Color-Light-grey);
+  --Background-Icon-bg: var(--Color-Pink-Dark);
+  --Background-Footer-bg: var(--Color-Darkest);
+  --Background-Pink-bg: var(--Color-Pink-Dark);
+  --Background-Nav-blur-bg: var(--Color-Peachy-Cream-45);
+  --Foreground-Body-text: var(--Color-Espresso-Bean);
+  --Foreground-Body-text-light: var(--Color-Dark-grey);
+  --Foreground-Body-accent-text: var(--Color-Pink-Dark);
+  --Foreground-Primary-button-text: var(--Color-Peachy-Cream);
+  --Foreground-Secondary-button-text: var(--Color-Espresso-Bean);
+  --Foreground-White-text: var(--Color-Peachy-Cream);
+  --Foreground-Logo: var(--Color-Espresso-Bean);
+  --Foreground-Logo-inverse: var(--Color-Peachy-Cream);
+  --Foreground-Icon: var(--Color-Espresso-Bean);
+  --Foreground-Accent-green: var(--Color-Green-Dark);
+  --Foreground-Accent-pink: var(--Color-Pink-Dark);
+  --Foreground-Accent-orange: var(--Color-Orange-Light);
+  --Foreground-Accent-blue: var(--Color-Blue-Dark);
+  --Foreground-Icon-on-pink: var(--Color-Peachy-Cream);
+  --Foreground-Footer-logo: var(--Color-Peachy-Cream);
+  --Borders-Box-outline: var(--Color-Pink-Light);
+  --Borders-Secondary-Button: var(--Color-Espresso-Bean);
+  --Borders-Pink-underline: var(--Color-Pink-Dark);
+  --Borders-Default-underline: var(--Color-Espresso-Bean);
+  --Borders-subtle-outline: var(--Color-Black-15);
+  --Borders-nav-border: var(--Color-Black-1);
+}
+
+[data-theme="dark"] {
+  --Background-App: var(--Color-Espresso-Bean);
+  --Background-App-Inset: var(--Color-Darkest);
+  --Background-Primary-button: var(--Color-Pink-Dark);
+  --Background-Primary-hover: var(--Color-Pink-Light);
+  --Background-Secondary-hover: var(--Color-Dark-grey);
+  --Background-Icon-bg: var(--Color-Pink-Dark);
+  --Background-Footer-bg: var(--Color-Darkest);
+  --Background-Pink-bg: var(--Color-Pink-Dark);
+  --Background-Nav-blur-bg: var(--Color-Deep-Maroon-35);
+  --Foreground-Body-text: var(--Color-Peachy-Cream);
+  --Foreground-Body-text-light: var(--Color-Grey);
+  --Foreground-Body-accent-text: var(--Color-Pink-Light);
+  --Foreground-Primary-button-text: var(--Color-Peachy-Cream);
+  --Foreground-Secondary-button-text: var(--Color-Peachy-Cream);
+  --Foreground-White-text: var(--Color-Peachy-Cream);
+  --Foreground-Logo: var(--Color-Peachy-Cream);
+  --Foreground-Logo-inverse: var(--Color-Espresso-Bean);
+  --Foreground-Icon: var(--Color-Peachy-Cream);
+  --Foreground-Accent-green: var(--Color-Green-Light);
+  --Foreground-Accent-pink: var(--Color-Pink-Light);
+  --Foreground-Accent-orange: var(--Color-Peach);
+  --Foreground-Accent-blue: var(--Color-Blue-Light);
+  --Foreground-Icon-on-pink: var(--Color-Peachy-Cream);
+  --Foreground-Footer-logo: var(--Color-Peachy-Cream);
+  --Borders-Box-outline: var(--Color-White-35);
+  --Borders-Secondary-Button: var(--Color-Peachy-Cream);
+  --Borders-Pink-underline: var(--Color-Pink-Light);
+  --Borders-Default-underline: var(--Color-Peachy-Cream);
+  --Borders-subtle-outline: var(--Color-White-15);
+  --Borders-nav-border: var(--Color-White-1);
+}
+
+:root {
+  --Text-H1-font-size: clamp(1rem, 7vw, 84px);
+  --Text-H1-line-height: clamp(1rem, 8vw, 88px);
+  --Text-H2-font-size: clamp(1rem, 6vw, 56px);
+  --Text-H2-line-height: clamp(1rem, 7vw, 64px);
+  --Text-H3-font-size: var(--Typography-font-size-48);
+  --Text-H3-line-height: var(--Typography-line-height-56);
+  --Text-H4-font-size: var(--Typography-font-size-36);
+  --Text-H4-line-height: var(--Typography-line-height-48);
+  --Text-H5-font-size: var(--Typography-font-size-28);
+  --Text-H5-line-height: var(--Typography-line-height-32);
+  --Text-H6-font-size: var(--Typography-font-size-16);
+  --Text-H6-line-height: var(--Typography-line-height-24);
+  --Text-Subtitle-font-size: var(--Typography-font-size-28);
+  --Text-Subtitle-line-height: var(--Typography-line-height-40);
+  --Text-Body-XL: var(--Typography-font-size-24);
+  --Text-Body-XL-line-height: var(--Typography-line-height-36);
+  --Text-Body-L: var(--Typography-font-size-20);
+  --Text-Body-L-line-height: var(--Typography-line-height-32);
+  --Text-Body-Default: var(--Typography-font-size-16);
+  --Text-Body-default-line-height: var(--Typography-line-height-24);
+  --Text-Body-S: var(--Typography-font-size-14);
+  --Text-Body-S-line-height: var(--Typography-line-height-24);
+  --Text-Body-XS: var(--Typography-font-size-12);
+  --Text-Body-XS-line-height: var(--Typography-line-height-20);
+  --Padding-padding-4: var(--Spacing-spacing-050);
+  --Padding-padding-8: var(--Spacing-spacing-100);
+  --Padding-padding-12: var(--Spacing-spacing-150);
+  --Padding-padding-16: var(--Spacing-spacing-200);
+  --Padding-padding-20: var(--Spacing-spacing-250);
+  --Padding-padding-24: var(--Spacing-spacing-300);
+  --Padding-padding-28: var(--Spacing-spacing-350);
+  --Padding-padding-32: var(--Spacing-spacing-400);
+  --Padding-padding-36: var(--Spacing-spacing-450);
+  --Padding-padding-40: var(--Spacing-spacing-500);
+  --Padding-padding-44: var(--Spacing-spacing-550);
+  --Padding-padding-48: var(--Spacing-spacing-600);
+  --Padding-padding-52: var(--Spacing-spacing-650);
+  --Padding-padding-64: 64px;
+  --Padding-padding-72: 72px;
+  --Padding-padding-80: 80px;
+  --Padding-padding-96: 96px;
+  --Padding-padding-120: 120px;
+  --Padding-card: var(--Padding-padding-24);
+  --Padding-container: var(--Padding-padding-32);
+  --Padding-container-gap: var(--Padding-padding-24);
+  --Padding-flex-16-12: var(--Padding-padding-16);
+  --Padding-flex-24-16: var(--Padding-padding-24);
+  --Padding-flex-32-20: var(--Padding-padding-32);
+  --Padding-flex-40-24: var(--Padding-padding-40);
+  --Padding-flex-48-32: var(--Padding-padding-48);
+  --Padding-flex-64-48: var(--Padding-padding-64);
+  --Padding-flex-80-40: var(--Padding-padding-80);
+  --Padding-flex-80-20: var(--Padding-padding-80);
+  --Padding-flex-120-64: var(--Padding-padding-120);
+  --Padding-application-h: var(--Padding-padding-52);
+  --Padding-application-v: var(--Padding-padding-120);
+  --Border-radius-Buttons: var(--Corners-Radius-50);
+  --Border-radius-Cards: var(--Corners-Radius-35);
+  --Border-radius-Images: var(--Corners-Radius-16);
+}
+
+@media (max-width: 900px) {
+  :root {
+    --Text-H1-font-size: 64px;
+    --Text-H1-line-height: 72px;
+    --Text-H2-font-size: var(--Typography-font-size-48);
+    --Text-H2-line-height: var(--Typography-line-height-56);
+    --Text-H3-font-size: var(--Typography-font-size-36);
+    --Text-H3-line-height: var(--Typography-line-height-40);
+    --Text-H4-font-size: var(--Typography-font-size-32);
+    --Text-H4-line-height: var(--Typography-line-height-40);
+    --Text-H5-font-size: var(--Typography-font-size-28);
+    --Text-H5-line-height: var(--Typography-line-height-32);
+    --Text-Subtitle-font-size: var(--Typography-font-size-28);
+    --Text-Subtitle-line-height: var(--Typography-line-height-40);
+    --Text-Body-Default: var(--Typography-font-size-16);
+    --Text-Body-XS: var(--Typography-font-size-10);
+    --Text-Body-S: var(--Typography-font-size-12);
+    --Text-Body-H6-font-size: var(--Typography-font-size-12);
+    --Text-Body-default: var(--Typography-font-size-16);
+    --Text-Body-XS-line-height: var(--Typography-line-height-16);
+    --Text-Body-L: var(--Typography-font-size-18);
+    --Text-Body-S-line-height: var(--Typography-line-height-20);
+    --Text-Body-XL: var(--Typography-font-size-20);
+    --Text-Body-H6-line-height: var(--Typography-line-height-20);
+    --Text-Body-default-line-height: var(--Typography-line-height-24);
+    --Text-Body-L-line-height: var(--Typography-line-height-32);
+    --Text-Body-XL-line-height: var(--Typography-font-size-32);
+    --Padding-flex-16-12: var(--Padding-padding-12);
+    --Padding-container-gap: var(--Padding-padding-16);
+    --Padding-card: var(--Padding-padding-20);
+    --Padding-flex-24-16: var(--Padding-padding-20);
+    --Padding-container: var(--Padding-padding-24);
+    --Padding-flex-32-20: var(--Padding-padding-24);
+    --Padding-application-h: var(--Padding-padding-32);
+    --Padding-application-v: var(--Padding-padding-96);
+    --Padding-flex-40-24: var(--Padding-padding-32);
+    --Padding-flex-48-32: var(--Padding-padding-40);
+    --Padding-flex-64-48: var(--Padding-padding-52);
+    --Padding-flex-80-40: var(--Padding-padding-52);
+    --Padding-flex-80-20: var(--Padding-padding-32);
+    --Padding-flex-120-64: var(--Padding-padding-80);
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --Text-H1-font-size: 56px;
+    --Text-H1-line-height: 56px;
+    --Text-H2-font-size: var(--Typography-font-size-36);
+    --Text-H2-line-height: var(--Typography-line-height-36);
+    --Text-H3-font-size: var(--Typography-font-size-32);
+    --Text-H3-line-height: var(--Typography-line-height-36);
+    --Text-H4-font-size: var(--Typography-font-size-28);
+    --Text-H4-line-height: var(--Typography-line-height-36);
+    --Text-H5-font-size: var(--Typography-font-size-24);
+    --Text-H5-line-height: var(--Typography-line-height-24);
+    --Text-Subtitle-font-size: var(--Typography-font-size-24);
+    --Text-Subtitle-line-height: var(--Typography-line-height-32);
+    --Text-Body-Default: var(--Typography-font-size-14);
+    --Text-Body-XS: var(--Typography-font-size-10);
+    --Text-Body-S: var(--Typography-font-size-12);
+    --Text-Body-H6-font-size: var(--Typography-font-size-12);
+    --Text-Body-L: var(--Typography-font-size-16);
+    --Text-Body-XS-line-height: var(--Typography-line-height-16);
+    --Text-Body-XL: var(--Typography-font-size-18);
+    --Text-Body-default---line-height: var(--Typography-line-height-20);
+    --Text-Body-S-line-height: var(--Typography-line-height-20);
+    --Text-Body-H6-line-height: var(--Typography-line-height-20);
+    --Text-Body-L-line-height: var(--Typography-line-height-24);
+    --Text-Body-XL-line-height: var(--Typography-font-size-28);
+    --Padding-container-gap: var(--Padding-padding-12);
+    --Padding-flex-16-12: var(--Padding-padding-12);
+    --Padding-card: var(--Padding-padding-16);
+    --Padding-flex-24-16: var(--Padding-padding-16);
+    --Padding-application-h: var(--Padding-padding-20);
+    --Padding-application-v: var(--Padding-padding-72);
+    --Padding-container: var(--Padding-padding-20);
+    --Padding-flex-32-20: var(--Padding-padding-20);
+    --Padding-flex-40-24: var(--Padding-padding-24);
+    --Padding-flex-48-32: var(--Padding-padding-32);
+    --Padding-flex-80-40: var(--Padding-padding-40);
+    --Padding-flex-80-20: var(--Padding-padding-20);
+    --Padding-flex-64-48: var(--Padding-padding-48);
+    --Padding-flex-120-64: var(--Padding-padding-64);
+  }
+}
+
+@supports (color: var(--test)) {
+  .css-variables-supported {
+    display: block;
+  }
+}
+
+@supports not (color: var(--test)) {
+  .css-variables-not-supported {
+    display: block;
+  }
+
+  .css-variables-supported {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+h1, .h1, .quote {
+  font-family: DM Serif Display, serif;
+}
+
+.h2, .h3 {
+  font-family: Inter;
+}
+
+h1, .h1 {
+  margin: 0;
+}
+
+h1.display, .h1.display {
+  color: var(--espressoBean);
+  font-size: 7vw;
+  line-height: 8vw;
+}
+
+.card-group {
+  gap: 3%;
+  display: flex;
+}
+
+.h2, h2 {
+  margin: 0;
+  font-size: 4.3vw;
+  font-weight: bold;
+  line-height: 5vw;
+}
+
+.h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.h4 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input, textarea {
+  color: var(--darkGrey);
+  font-size: var(--fontSize-body);
+  border: 1px solid #afafaf;
+  border-radius: 6px;
+  padding: 10px 15px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  color: var(--mediumGrey);
+  letter-spacing: 3px;
+  border-bottom: 1px solid #2d2d2d1a;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 24px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.eyebrow.large {
+  letter-spacing: 6px;
+  border-bottom: 0;
+  padding: 0;
+  font-size: 2vw;
+  line-height: 3vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+/*# sourceMappingURL=src_index_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,145 @@
+/* [project]/src/Components/SectionServices.css [app-client] (css) */
+.section-services {
+  padding: var(--Padding-application-v, 120px) var(--Padding-application-h, 16px);
+  align-items: center;
+  gap: var(--Padding-flex-64-48);
+  background: var(--Background-App-Inset, #feeee3);
+  flex-direction: column;
+  align-self: stretch;
+  transition: background-color .3s;
+  display: flex;
+}
+
+.section-services__header {
+  text-align: center;
+}
+
+.engagement-models-grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid;
+}
+
+.section-services__cta-note {
+  color: var(--Foreground-Body-text, #190d05);
+}
+
+.section-services__heading {
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-H2-font-size, 56px);
+  line-height: var(--Text-H2-line-height, 64px);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.section-services__lead {
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-Body-L, 20px);
+  line-height: var(--Text-Body-L-line-height, 32px);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.engagement-models-grid {
+  max-width: var(--Paragraph-max-width);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  display: grid;
+}
+
+.engagement-card {
+  border: 2px solid var(--Borders-Box-outline, #ff3b89);
+  border-radius: var(--Border-radius-Cards, 35px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 32px;
+  transition: all .3s;
+  display: flex;
+}
+
+.engagement-card__header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+}
+
+.engagement-card__title {
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-H4-font-size, 36px);
+  line-height: var(--Text-H4-line-height, 40px);
+  margin: 0;
+}
+
+.engagement-card__subtitle {
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-Body-L, 20px);
+  line-height: var(--Text-Body-L-line-height, 32px);
+  margin: 0;
+}
+
+.engagement-card__icon {
+  background-color: var(--Background-Icon-bg, #ff3b8926);
+  color: var(--Foreground-Icon, var(--Foreground-Body-text, #190d05));
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  font-size: 24px;
+  display: inline-flex;
+}
+
+.checkmark-list {
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.checkmark-item {
+  color: var(--Foreground-Body-text, #190d05);
+  line-height: 1.6;
+  font-size: var(--Text-Body-Default, 16px);
+  align-items: flex-start;
+  gap: 8px;
+  display: flex;
+}
+
+.checkmark-item:last-child {
+  margin-bottom: 0;
+}
+
+.checkmark-icon svg {
+  fill: var(--Foreground-Accent-pink);
+}
+
+.engagement-card--accent .engagement-card__icon {
+  background: var(--Foreground-Accent-blue);
+}
+
+.engagement-card--accent .checkmark-icon svg {
+  fill: var(--Foreground-Accent-blue);
+}
+
+.section-services__cta {
+  text-align: center;
+}
+
+.engagement-card .secondary-button {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .engagement-models-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .engagement-card {
+    padding: 16px;
+  }
+}
+
+/*# sourceMappingURL=src_Components_SectionServices_css_bad6b30c._.single.css.map*/

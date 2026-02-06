@@ -1,0 +1,23 @@
+/* [project]/src/Components/LogoRibbon.css [app-client] (css) */
+.Client-ribbon {
+  padding: 0 var(--Padding-application-h);
+  background-color: var(--Background-App, #feeee3);
+  transition: background-color .3s;
+}
+
+.Client-ribbon__container {
+  max-width: var(--App-max-width, 1500px);
+  gap: var(--Padding-flex-80-40, 80px);
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .Client-ribbon {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_Components_LogoRibbon_css_bad6b30c._.single.css.map*/
