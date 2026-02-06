@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/Components/LogoRibbon.css"],"sourcesContent":[".Client-ribbon {\n  padding: 0 var(--Padding-application-h);\n  background-color: var(--Background-App, #feeee3);\n  transition: background-color 0.3s ease;\n}\n.Client-ribbon__container {\n  max-width: var(--App-max-width, 1500px);\n  margin: 0 auto;\n  width: 100%;\n  display:flex;\n  flex-direction:row;\n  gap: var(--Padding-flex-80-40, 80px);\n}\n\n@media (max-width: 1024px) {\n\n    .Client-ribbon {\n        display:none;\n    }\n\n}"],"names":[],"mappings":"AAAA;;;;;;AAKA;;;;;;;;;AASA;EAEI"}}]
-}

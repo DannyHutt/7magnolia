@@ -1,8 +1,0 @@
-:HL["/_next/static/chunks/b498db0e5497c161.css","style"]
-:HL["/_next/static/chunks/16d8bee1c527cdcc.css","style"]
-:HL["/_next/static/chunks/0be1d70a0e051c20.css","style"]
-:HL["/_next/static/chunks/7286c17828d7b1d4.css","style"]
-:HL["/_next/static/chunks/f432493c3929e8d1.css","style"]
-:HL["/_next/static/media/7m.21bbb315.svg","image"]
-:HL["/_next/static/media/icon-in.41187e51.svg","image"]
-0:{"buildId":"Dq6fl41uj_UMSqwkggV__","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"team","paramType":null,"paramKey":"team","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
