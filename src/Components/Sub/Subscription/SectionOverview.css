@@ -1,0 +1,199 @@
+.section-overview {
+  padding: var(--Padding-application-v, 120px) var(--Padding-application-h, 52px);
+  background-color: var(--Background-App, #feeee3);
+  transition: background-color 0.3s ease;
+}
+.section-overview__container {
+  max-width: var(--Max-content-width, 1500px);
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 577px;
+  gap: 48px;
+  align-items: start;
+  padding-top: var(--Padding-application-v, 120px)
+}
+
+.section-overview__lead {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.masthead__title {
+  margin: 0;
+  font-family: 'DM Serif Display', serif;
+  font-size: var(--Text-H1-font-size, 84px);
+  line-height: var(--Text-H1-line-height, 88px);
+  color: var(--Foreground-Body-text, #190d05);
+  font-weight: 400;
+  max-width:var(--Paragraph-max-width, 1000px);
+}
+
+.section-overview__desc {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-Body-text-light, #190d05);
+  font-size: var(--Text-Body-L, 20px);
+  line-height: var(--Text-Body-L-line-height, 32px);
+  max-width: 760px;
+}
+
+.section-overview__services-label {
+  color: var(--Foreground-Accent-pink, var(--Color-Pink-Light));
+  font-weight: 700;
+  margin-top:16px;
+}
+
+.section-overview__services {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-overview__services li {
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-Body-text-light, #190d05);
+  font-size: var(--Text-Body-Default, 16px);
+  padding-left:30px;
+  align-items: flex-start;
+  gap:8px;
+}
+
+.section-overview__services li strong {
+    white-space:nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--Foreground-Body-text, #190d05);
+    margin-left: -30px;
+}
+
+.section-overview__card {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+.overview-card__bg {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--Border-radius-Cards, 35px);
+  overflow: hidden;
+}
+
+.overview-card__bg-img {
+  height:100%;
+}
+
+.overview-card__bg-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overview-card__panel {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px var(--Padding-application-h) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.overview-card__panel-header {
+    width:100%;
+    max-width:var(--Max-content-width, 1500px);
+}
+
+.overview-card__panel-inner {
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px 20px 0 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--Foreground-White-text, #fff5ee);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.overview-card__label {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-White-text, #fff5ee);
+      font-size: var(--Text-Subtitle-font-size);
+    line-height: var(--Text-Subtitle-line-height);
+}
+
+.overview-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: var(--Foreground-White-text);
+}
+
+.overview-card__amount {
+  font-family: 'DM Serif Display', serif;
+  font-size: 65px;
+  line-height: 1;
+}
+
+.overview-card__per {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+
+.overview-card__includes {
+  font-weight: 700;
+}
+
+.overview-card__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.overview-card__feature {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.overview-card__check img {
+  width: 20px;
+  height: 20px;
+}
+
+.primary-button {
+  align-self:flex-start;
+  margin:8px 0;
+}
+
+.gradientText {
+  background: linear-gradient(90deg, var(--Foreground-Accent-pink) 0%, var(--Foreground-Accent-blue) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1024px) {
+  .section-overview__container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+}
+
+

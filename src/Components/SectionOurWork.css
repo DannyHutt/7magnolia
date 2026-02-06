@@ -1,0 +1,116 @@
+/* SectionOurWork - token-driven styles using variables from src/index.css */
+/* SectionOurWork exactly following Figma node 3820:2512
+   Uses TitleCase variables from src/index.css and avoids extra behaviors. */
+
+.section-our-work {
+  padding: var(--Padding-application-v, 120px) var(--Padding-application-h, 52px);
+  background: var(--Background-App-Inset, var(--Color-Peachy-Cream, #fff5ee));
+  color: var(--Foreground-Body-text, #190d05);
+  transition: background-color 0.3s ease;
+}
+
+.section-our-work__container {
+  max-width: var(--Max-content-width, 1500px);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-our-work__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 64px; /* Figma: gap 64px between header and grid */
+}
+
+.section-our-work__heading {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: var(--Text-H2-font-size, 56px);
+  line-height: var(--Text-H2-line-height, 64px);
+  color: var(--Foreground-Body-text, #190d05);
+}
+
+.section-our-work__grid {
+  display: flex;
+  gap: clamp(16px, 2vw, 48px); /* Figma: gap between columns */
+  align-items: flex-start;
+}
+
+.section-our-work__item {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-our-work__media {
+  /* width: 468px;
+  height: 374px; */
+  border-radius: var(--Border-radius-Images, 16px);
+  overflow: hidden;
+}
+
+.section-our-work__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.section-our-work__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-our-work__meta-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--Foreground-Body-text, #190d05);
+}
+
+.section-our-work__meta-title {
+  margin: 0;
+  font-size: var(--Text-H4-font-size, 36px);
+  line-height: var(--Text-H4-line-height, 40px);
+  font-weight: 700;
+  color: var(--Foreground-Body-text, #190d05);
+}
+
+.section-our-work__meta-excerpt {
+  margin: 0;
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-default-line-height, 24px);
+  color: var(--Foreground-Body-text, #190d05);
+}
+
+.section-our-work__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Responsive: collapse columns like the Figma responsive rules */
+@media (max-width: 1024px) {
+  .section-our-work__grid {
+    flex-direction: column;
+    gap: 40px; /* Figma uses 40px between stacked items */
+    align-items: center;
+  }
+  .section-our-work__media {
+    width: 100%;
+    max-width: 468px;
+    height: auto;
+    aspect-ratio: 468 / 374;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-our-work {
+    padding: var(--Padding-application-v, 80px) var(--Padding-application-h, 16px);
+  }
+}

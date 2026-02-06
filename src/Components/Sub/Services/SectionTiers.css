@@ -1,0 +1,88 @@
+.section-tiers {
+  padding: var(--Padding-application-v, 120px) var(--Padding-application-h, 52px);
+  background-color: var(--Background-App-Inset, #fff5ee);
+  transition: background-color 0.3s ease;
+}
+.section-tiers__container {
+  max-width: var(--Max-content-width, 1500px);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-48-32, 48px);
+}
+
+.section-tiers__header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1000px;
+}
+
+.section-tiers__title {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-Body-text, #190d05);
+  font-weight: 700;
+  font-size: var(--Text-H3-font-size, 48px);
+  line-height: var(--Text-H3-line-height, 56px);
+  letter-spacing: -0.1px;
+}
+
+.section-tiers__lead {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-Body-L, 20px);
+  line-height: var(--Text-Body-L-line-height, 32px);
+  max-width: 1000px;
+}
+
+.section-tiers__art {
+  width: 100%;
+  display: block;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: var(--Border-radius-Cards, 35px);
+}
+
+.section-tiers__art-inner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* Keep aspect close to the Figma art (3494 / 1898) */
+  aspect-ratio: 3494 / 1898;
+}
+
+.section-tiers__art-inner img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .section-tiers__container {
+    gap: 32px;
+  }
+  .section-tiers__art-inner {
+    aspect-ratio: auto;
+    height: auto;
+  }
+  .section-tiers__art-inner img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-tiers {
+    padding: 80px 16px;
+  }
+  .section-tiers__title {
+    font-size: 32px;
+  }
+}

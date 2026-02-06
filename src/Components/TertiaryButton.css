@@ -1,0 +1,63 @@
+.tertiary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 6px 0;
+  cursor: pointer;
+  color: var(--Foreground-Secondary-button-text, var(--Foreground-Body-text));
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  transition: color 160ms ease-in-out, border-color 160ms ease-in-out, transform 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tertiary-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--Borders-subtle-outline, rgba(0,0,0,0.12));
+}
+
+.tertiary-button:hover:not(:disabled) {
+  border-bottom-color: var(--Borders-Default-underline, var(--Foreground-Body-text));
+}
+
+.tertiary-button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.tertiary-button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tertiary-button--large {
+  padding: 10px 0;
+  font-size: var(--Text-Body-L, 20px);
+  line-height: var(--Text-Body-L-line-height, 32px);
+}
+
+.tertiary-button--small {
+  padding: 6px 0;
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-default-line-height, 24px);
+}
+
+.tertiary-label {
+  display: inline-block;
+}
+
+.tertiary-button__icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  object-fit: contain;
+}
+
+/* Responsive tweaks (match project patterns) */
+@media (max-width: 768px) {
+  .tertiary-button--large {
+    font-size: var(--Text-Body-Default, 16px);
+  }
+}

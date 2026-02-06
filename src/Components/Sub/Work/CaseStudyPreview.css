@@ -1,0 +1,115 @@
+.case-study-preview {
+  padding: var(--Padding-application-v) var(--Padding-application-h);
+  background-color: var(--Background-App-Inset, var(--Background-App));
+  transition: background-color 0.3s ease;
+}
+.case-study-preview__container {
+  max-width: var(--App-max-width, 1500px);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.case-study-row {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.case-study-row.image-left {
+  flex-direction: row-reverse;
+}
+
+.case-study-text {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.case-study-title {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-H3-font-size, 48px);
+  line-height: var(--Text-H3-line-height, 56px);
+  letter-spacing: -0.1px;
+  max-width: 540px;
+}
+
+.case-study-intro {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-default-line-height, 24px);
+  max-width: 540px;
+}
+
+.case-study-body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-default-line-height, 24px);
+  max-width: 540px;
+}
+
+.case-study-cta {
+  margin-top: 8px;
+}
+
+.case-study-visual {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-study-visual__frame {
+  width: 100%;
+  max-width: 833px;
+  height: 665px;
+  border-radius: var(--Border-radius-Images, 16px);
+  overflow: hidden;
+  position: relative;
+}
+
+.case-study-visual__img {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .case-study-row {
+    gap: 48px;
+  }
+  .case-study-visual__frame {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .case-study-row,
+  .case-study-row.image-left {
+    gap: 32px;
+    align-items:flex-start;
+    flex-direction: column-reverse;
+  }
+
+
+  .case-study-visual__frame {
+    max-width: 100%;
+    height: 320px;
+  }
+  .case-study-title {
+    max-width: 100%;
+  }
+}

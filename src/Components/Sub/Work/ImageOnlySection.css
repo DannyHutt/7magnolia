@@ -1,0 +1,38 @@
+.imageonly-section {
+  padding: var(--Padding-application-v) var(--Padding-application-h);
+  background-color: var(--Background-App-Inset, var(--Background-App));
+  transition: background-color 0.3s ease;
+}
+.imageonly-section__container {
+  max-width: var(--App-max-width, 1500px);
+  margin: 0 auto;
+  width: 100%;
+  overflow: clip;
+  border-radius: var(--Border-radius-Images, 16px);
+}
+
+.imageonly-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageonly-frame {
+  width: 100%;
+  aspect-ratio: 3264 / 1802;
+  position: relative;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.imageonly-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+

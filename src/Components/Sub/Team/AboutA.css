@@ -1,0 +1,47 @@
+/* AboutA component — uses project tokens and follows existing Section patterns */
+.abouta {
+  padding: var(--Padding-application-v) var(--Padding-application-h);
+  background: var(--Background-App, var(--Color-Peachy-Cream));
+  transition: background-color 0.3s ease;
+}
+
+.abouta__container {
+  max-width: var(--Max-content-width);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-48-32, 48px);
+}
+
+.abouta__lead {
+  display: flex;
+  flex-direction: column;
+}
+
+.abouta__lead-text {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: var(--Text-H4-font-size, 36px);
+  line-height: var(--Text-H4-line-height, 48px);
+  color: var(--Foreground-Body-text, #190d05);
+}
+
+.abouta__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-24-16, 24px);
+}
+
+.abouta__para {
+  margin: 0;
+  max-width: 1000px;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--Text-Body-XL, 24px);
+  line-height: var(--Text-Body-XL-line-height, 40px);
+  color: var(--Foreground-Body-text, #190d05);
+}
+
+/* No @media rules that override variable-driven gap/padding */
+

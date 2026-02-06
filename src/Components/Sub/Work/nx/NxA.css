@@ -1,0 +1,51 @@
+/* NxA component styles - follow project tokens and image rules */
+.nxa {
+  background: var(--Background-App-Inset, #fff);
+  padding: var(--Padding-application-v, 48px) var(--Padding-application-h, 24px);
+  transition: background-color 0.3s ease;
+}
+
+.nxa__container {
+  margin: 0 auto;
+  max-width: var(--Max-content-width, 1100px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-64-48, 48px);
+}
+
+.nxa__intro {
+  color: var(--Foreground-Body-text, #0b0b0b);
+}
+
+.nxa__title {
+  font-size: var(--Text-H3-font-size, 28px);
+  line-height: var(--Text-H3-line-height, 36px);
+  margin: 0 0 8px 0;
+}
+
+.nxa__body {
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-default-line-height, 24px);
+  margin: 0;
+}
+
+.nxa__gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--Padding-flex-32-20, 24px);
+}
+
+.nxa__card {
+  overflow: hidden;
+  border-radius: var(--Border-radius-Images, 12px);
+  background: var(--Background-App-Inset, transparent);
+}
+
+.nxa__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Keep layout responsive via tokens; no hard-coded breakpoints added */

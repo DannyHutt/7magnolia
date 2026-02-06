@@ -1,0 +1,72 @@
+.pager-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: var(--Border-radius-Buttons, 31px);
+  border: none;
+  cursor: pointer;
+  color: var(--Foreground-Primary-button-text, var(--Foreground-White-text));
+  background: var(--Background-Primary-button, #dd0b5f);
+  padding: 8px 22px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  transition: background-color 160ms ease-in-out, transform 120ms ease;
+}
+
+.pager-button--next {
+    display: flex;
+    padding: 16px 16px 16px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pager-button--previous {
+    display: flex;
+    padding: 16px 22px 16px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pager-button:hover:not(:disabled) {
+  background: var(--Background-Primary-hover, #3e1c2e);
+}
+
+.pager-button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pager-button--small {
+  font-size: var(--Text-Body-L, 20px);
+  line-height: var(--Text-Body-L-line-height, 32px);
+}
+
+.pager-button--large {
+  font-size: var(--Text-Body-XL, 24px);
+}
+
+.pager-button__label {
+  display: inline-block;
+  color: var(--Foreground-Primary-button-text, var(--Foreground-White-text));
+}
+
+.pager-button__icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  object-fit: contain;
+  filter: none;
+  line-height: 24px;
+}
+
+.pager-button__icon--left {
+  transform: rotate(180deg);
+}
+
+/* Dark variant helper — if you want to force darker background, add class `pager-button--dark` */
+.pager-button--dark {
+  background: var(--Background-Primary-hover, #3e1c2e);
+}

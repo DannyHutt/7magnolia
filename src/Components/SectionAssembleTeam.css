@@ -1,0 +1,80 @@
+/* SectionAssembleTeam - token-driven styles matching Figma
+   Uses variables from src/index.css for theming */
+.section-assemble-team {
+  padding: var(--Padding-application-v, 120px) var(--Padding-application-h, 52px);
+  background-color: var(--Background-App, #fff5ee);
+  transition: background-color 0.3s ease;
+}
+.section-assemble-team__container {
+  max-width: var(--Max-content-width, 1500px);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-assemble-team__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.section-assemble-team__copy {
+  flex: 1 1 50%;
+  min-width: 320px;
+}
+
+.section-assemble-team__title {
+  margin: 0 0 24px 0;
+  font-family: 'DM Serif Display', serif;
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-H1-font-size);
+  line-height: var(--Text-H1-line-height);
+  font-weight: 400;
+}
+
+.section-assemble-team__cta {
+  margin-top: 12px;
+}
+
+.section-assemble-team__visual {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-assemble-team__visual-inner {
+  width: 100%;
+  max-width: 720px;
+  border-radius: var(--Border-radius-Images, 16px);
+  overflow: visible;
+  display: block;
+}
+
+.section-assemble-team__visual-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: none;
+}
+
+/* Make sure the CTA uses the same visual prominence as Figma */
+.section-assemble-team .primary-button {
+  align-self: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .section-assemble-team__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section-assemble-team__copy {
+    padding: 0 24px;
+  }
+  .section-assemble-team__visual {
+    margin-top: 32px;
+  }
+}

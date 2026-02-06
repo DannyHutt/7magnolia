@@ -1,0 +1,89 @@
+.sectionc {
+  padding: var(--Padding-application-v) var(--Padding-application-h);
+  background-color: var(--Background-App);
+  transition: background-color 0.3s ease;
+}
+.sectionc__container {
+  max-width: var(--Max-content-width, 1500px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-64-48, 64px);
+}
+
+.sectionc__intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-24-16, 24px);
+}
+.sectionc__title {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: var(--Text-H3-font-size, 48px);
+  line-height: var(--Text-H3-line-height, 56px);
+  letter-spacing: -0.1px;
+  color: var(--Foreground-Body-text, #190d05);
+}
+.sectionc__body {
+  margin: 0;
+  max-width: 1000px;
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-default-line-height, 24px);
+}
+
+.sectionc__block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-24-16, 24px);
+}
+.sectionc__h4 {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: var(--Text-H4-font-size, 36px);
+  line-height: var(--Text-H4-line-height, 40px);
+  color: var(--Foreground-Body-text, #190d05);
+}
+.sectionc__small {
+  margin: 0;
+  max-width: 1000px;
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-default-line-height, 24px);
+}
+
+.sectionc__image-contrast {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sectionc__image-contrast .sectionc__img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.sectionc__image-guides {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--Padding-flex-24-16, 24px);
+  align-items: start;
+}
+.sectionc__guide .sectionc__img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .sectionc__image-contrast .sectionc__img { width: 100%; height: auto; }
+  .sectionc__image-guides { grid-template-columns: 1fr; }
+}
+

@@ -1,0 +1,21 @@
+.Client-ribbon {
+  padding: 0 var(--Padding-application-h);
+  background-color: var(--Background-App, #feeee3);
+  transition: background-color 0.3s ease;
+}
+.Client-ribbon__container {
+  max-width: var(--App-max-width, 1500px);
+  margin: 0 auto;
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  gap: var(--Padding-flex-80-40, 80px);
+}
+
+@media (max-width: 1024px) {
+
+    .Client-ribbon {
+        display:none;
+    }
+
+}

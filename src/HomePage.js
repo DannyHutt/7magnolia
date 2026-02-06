@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState, useEffect } from "react";
 import { ThemeContext } from './App';
 import { useContext } from 'react';
-import SharedContext from './SharedContext';
+import SharedContext from './Hooks/SharedContext';
 import { NavLink } from 'react-router-dom';
 // --------------------------------
 // ICONS 
@@ -32,6 +32,14 @@ import logo_6 from './images/logos/Frame 829.png';
 import qfPreview from './images/quantfu-preview.jpg';
 import esPreview from './images/estatespace-preview.jpg';
 import nxPreview from './images/neurox-preview.jpg';
+
+function ScrollToTopOnMount() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
 
 
 const HomePage = () => {
@@ -85,7 +93,7 @@ const HomePage = () => {
 
  return (
   <div className='page-home'>
-    
+      <ScrollToTopOnMount />
       <section className="hero" aria-labelledby="Page-heading">
 
         <div className="hero-content">
@@ -96,19 +104,19 @@ const HomePage = () => {
               <NavLink className="btn-primary large" to="./contact">Let's Talk!</NavLink>
             </div>
             <div className='content-block-alt'>
-              <img aria-hidden="true" src={phonesPhoto} alt="3 smart phones displaying one of our native app designs" />
+              <img aria-hidden="true" src={phonesPhoto.src} alt="3 smart phones displaying one of our native app designs" />
             </div>
           </div>
           <div className="Content-wrap logos">
             <ul className="logo-ribbon">
-              <li><img src={logo_1} /></li>
-              <li><img src={logo_2} /></li>
-              <li><img src={logo_3} /></li>
+              <li><img src={logo_1.src} /></li>
+              <li><img src={logo_2.src} /></li>
+              <li><img src={logo_3.src} /></li>
             </ul>
             <ul className='logo-ribbon'>
-              <li><img src={logo_4} /></li>
-              <li><img src={logo_5} /></li>
-              <li><img src={logo_6} /></li>
+              <li><img src={logo_4.src} /></li>
+              <li><img src={logo_5.src} /></li>
+              <li><img src={logo_6.src} /></li>
             </ul>
           </div>
         </div>
@@ -127,7 +135,7 @@ const HomePage = () => {
 <div className='card-group-inner'>
               <div className="section2Col-wrap">
                 <div className="col col1">
-                    <img aria-hidden="true" src={nxPreview} alt="Two designers collaborating and looking at a computer screen" />
+                    <img aria-hidden="true" src={nxPreview.src} alt="Two designers collaborating and looking at a computer screen" />
                 </div>
                 <div className="col col2">
                     <h2 aria-label='augmentation and customization' id='Augmentation-heading' className="eyebrow">branding & identity • UX/UI </h2>
@@ -139,7 +147,7 @@ const HomePage = () => {
 
               <div className="section2Col-wrap">
                 <div className="col col1">
-                    <img aria-hidden="true" src={esPreview} alt="Two designers collaborating and looking at a computer screen" />
+                    <img aria-hidden="true" src={esPreview.src} alt="Two designers collaborating and looking at a computer screen" />
                 </div>
                 <div className="col col2">
                     <h2 aria-label='augmentation and customization' id='Augmentation-heading' className="eyebrow">UX/UI • Development • design system</h2>
@@ -151,12 +159,12 @@ const HomePage = () => {
 
               <div className="section2Col-wrap">
                 <div className="col col1">
-                    <img aria-hidden="true" src={qfPreview} alt="Two designers collaborating and looking at a computer screen" />
+                    <img aria-hidden="true" src={qfPreview.src} alt="Two designers collaborating and looking at a computer screen" />
                 </div>
                 <div className="col col2">
                     <h2 aria-label='augmentation and customization' id='Augmentation-heading' className="eyebrow">branding & identity • UX/UI</h2>
                     <h3 className="h3">QuantFu</h3>
-                    <p>An application designed to simplify complex stock trading and while empowering users through an approachable brand experience.</p>
+                    <p>An application designed to simplify complex stock trading while empowering users through an approachable brand experience.</p>
                     <NavLink className='btn-secondary' to='./work/qf'>Read More</NavLink>
                 </div>
               </div>

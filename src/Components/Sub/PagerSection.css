@@ -1,0 +1,38 @@
+.pager-section {
+  padding: var(--Padding-flex-80-40, 80px) var(--Padding-application-h);
+  background: var(--Background-App);
+  transition: background-color 0.3s ease;
+}
+.pager-section__container {
+  max-width: var(--App-max-width, 1500px);
+  margin: 0 auto;
+  width: 100%;
+}
+.pager-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.pager-row__left,
+.pager-row__right {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure buttons hug edges similar to the design */
+.pager-row__left {
+  justify-content: flex-start;
+}
+.pager-row__right {
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .pager-section {
+    padding: var(--Padding-flex-48-32, 48px) 16px;
+  }
+  .pager-row {
+    gap: 24px;
+  }
+}

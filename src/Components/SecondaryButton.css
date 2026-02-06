@@ -1,0 +1,51 @@
+/* SecondaryButton - token-driven styles using index.css variables */
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: var(--Border-radius-Buttons, 31px);
+  border: 2px solid var(--Borders-Secondary-Button);
+  background: transparent;
+  color: var(--Foreground-Secondary-button-text);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 160ms ease-in-out, color 160ms ease-in-out, transform 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.secondary-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--Borders-subtle-outline, rgba(0,0,0,0.12));
+}
+
+.secondary-button:hover:not(:disabled) {
+  background: var(--Background-Secondary-hover);
+  color: var(--Foreground-Secondary-button-text);
+}
+
+.secondary-button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.secondary-button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.secondary-button--large {
+  padding: var(--Padding-padding-16, 16px) var(--Padding-padding-48, 48px);
+  font-size: var(--Text-Body-L, 20px);
+  line-height: var(--Text-Body-L-line-height, 32px);
+}
+
+.secondary-button--small {
+  padding: var(--Padding-padding-12, 10px) var(--Padding-padding-24, 24px);
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-default-line-height, 24px);
+}
+
+.secondary-button .label {
+  display: inline-block;
+}

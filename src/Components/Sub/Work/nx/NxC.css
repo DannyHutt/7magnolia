@@ -1,0 +1,46 @@
+/* NxC component — follows QfD pattern and project tokens */
+.nxc {
+  padding: var(--Padding-application-v) var(--Padding-application-h);
+  /* Use a theme token if available, otherwise fall back to the dark color from Figma */
+  background-color: #091728;
+}
+
+.nxc__container {
+  max-width: var(--Max-content-width);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-64-48, 64px);
+}
+
+.nxc__title {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: var(--Text-H3-font-size, 48px);
+  line-height: var(--Text-H3-line-height, 56px);
+  color: var(--Foreground-White-text, #ffffff);
+}
+
+.nxc__stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-64-48, 64px);
+  width: 100%;
+}
+
+.nxc__frame {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--Border-radius-Images, 16px);
+}
+
+.nxc__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* No @media rules that override variable-driven gap/padding */

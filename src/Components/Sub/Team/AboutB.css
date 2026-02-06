@@ -1,0 +1,110 @@
+/* AboutB component — two-column profile section using project tokens */
+.aboutb {
+  padding: var(--Padding-application-v) var(--Padding-application-h);
+  background: var(--Background-App-Inset, var(--Background-App));
+  transition: background-color 0.3s ease;
+}
+
+.aboutb__container {
+  max-width: var(--Max-content-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.aboutb__inner {
+  display: flex;
+  gap: var(--Padding-flex-80-20, 80px);
+  align-items: flex-start;
+  width: 100%;
+}
+
+.aboutb__profile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-48-32, 48px);
+  width: 50%;
+}
+
+.aboutb__photo {
+  width: 246px;
+  height: 246px;
+  overflow: hidden;
+  border-radius: var(--Border-radius-Images, 16px);
+}
+
+.aboutb__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.aboutb__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Padding-flex-16-12, 16px);
+}
+
+.aboutb__meta-head {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.aboutb__name {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: var(--Text-H4-font-size, 36px);
+  line-height: var(--Text-H4-line-height, 48px);
+  color: var(--Foreground-Body-text, #190d05);
+}
+
+.aboutb__icon {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.aboutb__role {
+  margin: 0;
+  color: var(--Foreground-Body-accent-text, #dd0b5f);
+  font-family: 'Inter', sans-serif;
+  font-size: var(--Text-Body-Default, 16px);
+}
+
+.aboutb__bio {
+  margin: 0;
+  color: var(--Foreground-Body-text, #190d05);
+  opacity: 0.9;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-default-line-height, 24px);
+}
+
+.aboutc__grid {
+        max-width: var(--Paragraph-max-width);
+}
+
+/* No @media rules that override variable-driven gap/padding */
+
+@media (max-width: 768px) {
+  .aboutb__inner {
+    flex-direction: column;
+    gap: var(--Padding-flex-48-32, 48px);
+  }
+
+  .aboutb__profile {
+    width: 100%;
+  }
+
+  .aboutb__photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .aboutc__grid {
+    grid-template-columns: 1fr !important;
+}
+}

@@ -1,0 +1,141 @@
+
+
+.navbar {
+    background: var(--Background-Nav-blur-bg);  
+    border-radius: 0;
+    box-shadow: 0 4px 30px var(--Background-Nav-blur-bg);
+    backdrop-filter: blur(32px);
+    border-bottom: 1px solid var(--Borders-nav-border);
+    position: sticky;
+    top: 0;
+    padding: var(--Padding-flex-24-16) var(--Padding-application-h, 48px);
+    width:100%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: unset;
+  padding: unset;
+  width:100%;
+  max-width:var(--Max-content-width, 1500px);
+}
+
+nav .nav-mobile-tools {
+  display: flex;
+}
+
+nav .nav-mobile-tools .nav-mobile-menu-button,
+nav .nav-mobile-tools .nav-mobile-close-button {
+  display: none;
+  border:0;
+  align-items: center;
+}
+
+nav .nav-mobile-tools button {
+  background: transparent;
+  padding: 0;
+}
+
+.main-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-tools {
+    display:flex;
+  }
+
+.main-nav > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color:var(--Foreground-Body-text);
+  font-weight: 600;
+  line-height: 24px;
+  border-bottom: 3px solid transparent;
+  font-size: 18px;
+  padding: 16px 0;
+}
+
+.main-nav li a.active {
+  border-bottom: 3px solid var(--Borders-Pink-underline);
+  opacity: 1;
+}
+
+.main-nav li a:hover {
+  opacity: 1;
+}
+
+.nav-tools .li-theme {
+    display:flex;
+    align-items:center;
+    justify-content: center;;
+}
+
+/* Mobile nav displayed */
+
+@media (max-width: 1024px) {
+
+
+  nav .main-nav {
+    display: none;
+  }
+  nav .nav-tools {
+    width: 100%;
+    display: none;
+  }
+
+  .mobile-nav-true nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--Padding-flex-24-16) var(--Padding-application-h, 48px);
+    align-items:flex-start;
+    flex-direction: column;
+    background:var(--Background-App);
+    transition: background-color 0.3s ease;
+  }
+
+  .mobile-nav-true .main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 100%;
+    margin-top: 5vh;
+        margin-bottom: 1vh;
+    align-items: center;
+            margin-top: 5vh;
+  }
+
+  .mobile-nav-true .nav-tools {
+    display: flex;
+    gap: 5vh;
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+  }
+
+  .navbar.mobile-nav-true {
+    backdrop-filter:none;
+  }
+
+  .nav-mobile-menu-button {
+    display: flex !important;
+  }
+  nav .nav-mobile-tools {
+    width:100%;
+    justify-content: space-between;
+  }
+}

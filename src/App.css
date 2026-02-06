@@ -1,5 +1,6 @@
 body {
-  background: var(--espressoBean);
+  background: var(--Background-App);
+  transition: background-color 0.3s ease;
 }
 
 .App {
@@ -10,8 +11,7 @@ body {
 }
 
 .top-banner {
-  background: var(--pink);
-  padding: 8px 30px;
+  background: var(--Background-Primary-button, #DD0B5F);
   width: 100%;
   color: var(--peachyCream);
   text-decoration: none;
@@ -20,19 +20,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 3px;
+  display: none;
 }
 
 .App-logo {
   height: 37px;
-}
-
-.navbar {
-  padding: 21px 0;
-  /* position: sticky; */
-  top: 0;
-  z-index: 500;
-  /* container-type:inline-size; */
-  position: absolute;
+  width: auto;
 }
 
 .logo-link {
@@ -60,98 +54,22 @@ main {
   flex-direction: column;
   align-items: center;
   flex: 1;
+  margin-top: -108px;
 }
 main > div {
   width: 100%;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: unset;
-  padding: unset;
+@media (max-width: 900px) {
+  main {
+    margin-top: -82px;
+  }
 }
-nav .nav-mobile-tools {
-  display: flex;
+@media (max-width: 600px) {
+  main {
+    margin-top: -74px;
+  }
 }
-nav .nav-mobile-tools .nav-mobile-menu-button,
-nav .nav-mobile-tools .nav-mobile-close-button {
-  display: none;
-}
-nav .nav-mobile-tools button {
-  background: transparent;
-  padding: 0;
-}
-
-.main-nav {
-  display: flex;
-  gap: 32px;
-}
-
-.main-nav > li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.main-nav li a {
-  text-decoration: none;
-  color: var(--darkGrey);
-  font-weight: 600;
-  line-height: 24px;
-  border-bottom: 3px solid transparent;
-  font-size: 18px;
-  padding: 16px 0;
-  opacity: 0.7;
-}
-.main-nav li a.active {
-  border-bottom: 3px solid var(--pink);
-  opacity: 1;
-}
-.main-nav li a:hover {
-  opacity: 1;
-}
-
-.main-nav li .our-work-btn {
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 24px;
-  border-bottom: 3px solid transparent;
-  font-size: 18px;
-  padding: 16px 0;
-  opacity: 0.7;
-  border-radius: 0;
-  font-family: "Inter";
-  background: transparent;
-  color: var(--peachyCream);
-}
-.main-nav li .our-work-btn:hover {
-  opacity: 1;
-}
-.main-nav li .our-work-btn.active {
-  opacity: 1;
-  border-bottom: 3px solid var(--pink);
-}
-
-.main-nav li.li-theme {
-  margin-left: 0;
-  border-bottom: 0;
-  position: relative;
-}
-
-.mag-nav-dd-item {
-  position: relative;
-}
-.mag-nav-dd-item .popover-menu {
-  left: -24px;
-  right: auto;
-}
-
-.main-nav li a.btn-primary {
-  color: #fff;
-}
-
 .card-group {
   overflow: auto;
 }
@@ -211,13 +129,10 @@ nav .nav-mobile-tools button {
   background: transparent;
 }
 
-/* .main-nav li:hover {
-  border-bottom:3px solid var(--blue);
-} */
 .hero {
   position: relative;
   display: block;
-  background: url("./images/backdrop.jpg");
+  background: url("./images/backdrop-light.jpg");
   background-size: cover;
 }
 
@@ -234,40 +149,21 @@ nav .nav-mobile-tools button {
   right:0;
   left:50%;
 } */
-.hero-content {
-  padding-top: 156px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
-.hero-content h1 {
-  margin-bottom: 40px;
-}
-
-.hero .Content-wrap {
-  position: relative;
-  /* padding-bottom: 140px; */
-  display: flex;
-  gap: 64px;
-  margin-bottom: 104px;
-}
-
-.hero .Content-wrap.logos {
-  margin-bottom: 28px;
+.Content-wrap.logos {
   display: flex;
   flex-direction: row;
-  gap: 0;
+  gap: 60px;
 }
 
 .logo-ribbon {
   display: flex;
   width: 100%;
+  gap: 60px;
 }
 .logo-ribbon li {
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .logo-ribbon li img {
   width: 100%;
@@ -316,9 +212,7 @@ nav .nav-mobile-tools button {
   color: var(--blue);
 }
 
-button,
-a.btn-primary,
-a.btn-secondary {
+button#Theme-btn {
   font-weight: 600;
   padding: 10px 24px;
   font-size: 16px;
@@ -329,9 +223,7 @@ a.btn-secondary {
   cursor: pointer;
   transition: background 0.2s;
 }
-button.large,
-a.btn-primary.large,
-a.btn-secondary.large {
+button#Theme-btn.large {
   padding: 16px 45px;
   font-size: 18px;
   line-height: 32px;
@@ -376,10 +268,6 @@ button.theme-btn:hover {
   flex-direction: row-reverse;
 }
 
-button.btn-theme-default {
-  background: url("./images/icon-refresh.svg") no-repeat 14px center;
-}
-
 button.btn-theme-light {
   background: url("./images/icon-sun.svg") no-repeat 14px center;
 }
@@ -395,9 +283,9 @@ a.btn-primary {
   text-decoration: none;
 }
 
-.btn-secondary,
-a.btn-secondary {
-  color: #fff;
+.btn-secondary, a.btn-secondary {
+  border: 2px solid var(--espressoBean);
+  color: var(--espressoBean);
   text-decoration: none;
 }
 
@@ -408,7 +296,7 @@ a.btn-secondary {
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-  background: #000;
+  background: var(--lightGrey);
 }
 
 .btn-secondary.outline {
@@ -438,13 +326,17 @@ a.btn-secondary {
   padding: 2px; /* control the border thickness */
   background: linear-gradient(90deg, #0d90ff 0%, #FFCF00 49%, #fc0fff 80%, #1796ff 100%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-  mask-composite: exclude;
+          mask-composite: xor;
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
   pointer-events: none;
 }
 
 .btn-primary:focus-visible::after,
-.btn-secondary:focus-visible::after {
+.btn-secondary:focus-visible::after,
+.primary-button:focus-visible::after {
   border-radius: 50px;
 }
 
@@ -602,8 +494,7 @@ a.btn-secondary {
   overflow: hidden;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
   clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+  clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
   white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 }
 
@@ -908,8 +799,8 @@ a.btn-secondary {
 }
 
 footer {
-  padding: 70px 0;
-  background: var(--darkest);
+  padding: 70px 0 24px;
+  background: var(--Background-Footer-bg);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -921,24 +812,29 @@ footer .Content-wrap {
   justify-content: space-between;
   flex-direction: column;
 }
-footer .Content-wrap > div {
+footer .Content-wrap .foot-main {
   display: flex;
   align-items: center;
+  margin-bottom: 72px;
 }
-footer .Content-wrap > div p {
+footer .Content-wrap .foot-main p {
   margin-left: 30px;
-  color: var(--peachyCream);
+  color: var(--Foreground-White-text);
 }
-footer .Content-wrap > div p a {
-  color: var(--peachyCream);
+footer .Content-wrap .foot-main p a {
+  color: var(--Foreground-White-text);
   font-weight: bold;
 }
-footer .Content-wrap > div p a:hover {
+footer .Content-wrap .foot-main p a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+footer .Content-wrap .foot-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 footer .Content-wrap p.copyright {
-  color: var(--peachyCream);
-  margin-top: 70px;
+  color: var(--Foreground-White-text);
   margin-bottom: 0;
 }
 
@@ -960,96 +856,50 @@ footer .mark {
 }
 
 /* @media (prefers-color-scheme: dark) { */
-.App.darkTheme {
-  background: var(--espressoBean);
-  color: var(--peachyCream);
-}
-.App.darkTheme body {
-  background: var(--espressoBean);
-}
-.App.darkTheme .display {
-  color: var(--peachyCream);
-}
-.App.darkTheme h1.display .highlight {
+[data-theme=dark] h1.display .highlight {
   color: var(--pink);
 }
-.App.darkTheme .page-a11y p {
+[data-theme=dark] .page-a11y p {
   color: var(--peachyCream);
 }
-.App.darkTheme .page-a11y a {
+[data-theme=dark] .page-a11y a {
   color: var(--pinkAA);
 }
-.App.darkTheme .page-a11y a:hover {
+[data-theme=dark] .page-a11y a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-.App.darkTheme button.theme-btn {
+[data-theme=dark] button.theme-btn {
   color: var(--lightGrey);
 }
-.App.darkTheme button.theme-btn::before {
+[data-theme=dark] button.theme-btn::before {
   background: url(./images/icon_theme_dark.svg) no-repeat left center;
 }
-.App.darkTheme button.theme-btn:hover {
+[data-theme=dark] button.theme-btn:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-.App.darkTheme .popover-menu {
+[data-theme=dark] .popover-menu {
   background: var(--deepMaroon);
 }
-.App.darkTheme .popover-menu li .active {
+[data-theme=dark] .popover-menu li .active {
   background: transparent;
 }
-.App.darkTheme .popover-menu button {
+[data-theme=dark] .popover-menu button {
   color: var(--lightGrey);
 }
-.App.darkTheme button.btn-theme-default {
+[data-theme=dark] button.btn-theme-default {
   background: url("./images/icon-refresh-dark.svg") no-repeat 14px center;
 }
-.App.darkTheme button.btn-theme-light {
+[data-theme=dark] button.btn-theme-light {
   background: url("./images/icon-sun-dark.svg") no-repeat 14px center;
 }
-.App.darkTheme button.btn-theme-dark {
+[data-theme=dark] button.btn-theme-dark {
   background: url("./images/icon-moon-dark.svg") no-repeat 14px center;
 }
-.App.darkTheme .eyebrow {
-  color: var(--peachyCream);
+[data-theme=dark] .eyebrow {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
-.App.darkTheme .eyebrow.large {
+[data-theme=dark] .eyebrow.large {
   border-bottom: 0;
-}
-.App.darkTheme .expertise .cardHead {
-  border-bottom: 2px solid #4d4d4d;
-}
-.App.darkTheme .expertise,
-.App.darkTheme .aboutUs {
-  background: var(--extraDarkPurple);
-  color: var(--textBlue);
-}
-.App.darkTheme .industries {
-  background: var(--brightPurpleBlue);
-  color: var(--lightGrey);
-}
-.App.darkTheme .main-nav li a {
-  color: var(--peachyCream);
-}
-.App.darkTheme footer {
-  background: var(--darkest);
-  color: var(--peachyCream);
-}
-.App.darkTheme .btn-secondary, .App.darkTheme a.btn-secondary {
-  border: 2px solid var(--lightGrey);
-  color: var(--lightGrey);
-}
-.App.darkTheme .btn-secondary:hover, .App.darkTheme a.btn-secondary:hover {
-  background: var(--extraDarkGrey);
-}
-.App.darkTheme .btn-secondary.outline {
-  background: transparent;
-  border: 2px solid var(--lightGrey);
-  color: var(--lightGrey);
-}
-.App.darkTheme .btn-secondary.outline:hover {
-  background: var(--purpleSlate);
-  color: #fff;
 }
 
 @media (min-width: 1500px) {
@@ -1079,16 +929,6 @@ footer .mark {
   }
 }
 @media (max-width: 1200px) {
-  .main-nav {
-    gap: 16px;
-  }
-  .main-nav li a,
-  .main-nav li .our-work-btn {
-    font-size: 16px;
-  }
-  .nav-tools a.btn-primary {
-    font-size: 14px;
-  }
   .smallCard {
     padding: 24px;
   }
@@ -1131,71 +971,6 @@ footer .mark {
   }
 }
 @media (max-width: 900px) {
-  nav {
-    background: transparent;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 34px;
-  }
-  nav .nav-mobile-tools {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  nav .nav-mobile-tools .nav-mobile-close-button {
-    display: none;
-  }
-  nav .nav-mobile-tools .nav-mobile-menu-button {
-    display: block;
-  }
-  nav .nav-mobile-tools .logo-link {
-    width: 150px;
-  }
-  nav .nav-mobile-tools button {
-    width: 32px;
-  }
-  nav .main-nav {
-    flex-direction: column;
-    width: 100%;
-    display: none;
-  }
-  nav .main-nav .popover-menu {
-    position: static;
-    background: transparent;
-  }
-  nav .main-nav .popover-menu .pop-menu-button {
-    background: transparent;
-  }
-  nav .main-nav li .our-work-btn {
-    text-align: left;
-  }
-  nav .nav-tools {
-    width: 100%;
-    display: none;
-  }
-  nav.mobile-nav.true {
-    background: var(--espressoBean);
-    position: fixed;
-    padding: 24px 20px;
-  }
-  nav.mobile-nav.true .nav-mobile-menu-button {
-    display: none;
-  }
-  nav.mobile-nav.true .nav-mobile-close-button {
-    display: block;
-  }
-  nav.mobile-nav.true .main-nav {
-    display: flex;
-  }
-  nav.mobile-nav.true .nav-tools {
-    display: flex;
-  }
   .page-a11y h1 {
     margin-top: 80px;
   }
@@ -1242,6 +1017,7 @@ footer .mark {
   .hero .Content-wrap {
     flex-direction: column;
     gap: 0;
+    margin-bottom: 32px;
   }
   .sectionQuote {
     padding: 48px 0;
@@ -1325,17 +1101,17 @@ footer .mark {
     padding-right: 0;
     max-width: 700px;
   }
-  footer .Content-wrap > div {
+  footer .Content-wrap .foot-main {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
     gap: 50px;
   }
-  footer .Content-wrap > div p {
+  footer .Content-wrap .foot-main p {
     margin-left: 0;
     text-align: left;
   }
-  footer .Content-wrap > div a {
+  footer .Content-wrap .foot-main a {
     margin: 0;
   }
   footer .Content-wrap p.copyright {
@@ -1353,7 +1129,7 @@ footer .mark {
     line-height: 48px;
   }
   .hero .content-block h1 {
-    margin-top: 32px;
+    margin-top: 8px;
   }
   h1.display {
     line-height: 18vw;
@@ -1366,12 +1142,6 @@ footer .mark {
   }
   a.btn-primary.large {
     padding: 8px 45px;
-  }
-  button,
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-    text-align: center;
   }
   .hero .hero-content {
     padding-top: 104px;
@@ -1387,7 +1157,7 @@ footer .mark {
     flex-direction: column;
   }
   .section-head .Content-wrap {
-    padding: 32px 20px 72px;
+    padding: 0 20px 72px;
   }
   .partnersHead .h3 {
     margin-top: 32px;
@@ -1408,6 +1178,10 @@ footer .mark {
   .smallCard p {
     margin: 4px 0;
   }
+  .case-study .details-block p {
+    font-size: 18px;
+    line-height: 32px;
+  }
   .section-our-work .Content-wrap {
     padding: 0;
   }
@@ -1422,12 +1196,13 @@ footer .mark {
   .section-our-work .Content-wrap .card-group {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 0;
   }
   .section-our-work .Content-wrap .card-group .card-group-inner {
     gap: 2%;
   }
   .section-our-work .Content-wrap .section2Col-wrap {
-    width: 91vw;
+    width: 88vw;
     gap: 8px;
     padding-top: 16px;
   }

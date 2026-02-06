@@ -1,0 +1,102 @@
+.section-how {
+  padding: var(--Padding-application-v, 120px) var(--Padding-application-h, 52px);
+  background-color: var(--Background-App-Inset);
+  transition: background-color 0.3s ease;
+}
+.section-how__container {
+  max-width: var(--Max-content-width, 1500px);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-how__title {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-Body-text, #190d05);
+  font-weight: 600;
+  font-size: var(--Text-H2-font-size, 56px);
+  line-height: var(--Text-H2-line-height, 64px);
+}
+
+.section-how__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.how-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  padding: var(--Padding-flex-32-20, 32px);
+  border: 2px solid var(--Borders-Box-outline, #ff3b89);
+  border-radius: var(--Border-radius-Cards, 35px);
+  background: transparent;
+}
+
+.how-card__icon {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+      background: var(--Background-Icon-bg);
+    border-radius: 50%;
+}
+
+.how-card__icon-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.how-card__number {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--Foreground-White-text, #fff5ee);
+  font-size: 24px;
+}
+
+.how-card__body {
+  flex: 1 1 auto;
+}
+
+.how-card__heading {
+  margin: 0 0 8px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--Foreground-Body-text, #190d05);
+  font-size: var(--Text-Body-L, 20px);
+  line-height: var(--Text-Body-L-line-height, 32px);
+}
+
+.how-card__desc {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--Foreground-Body-text-light, #190d05);
+  font-size: var(--Text-Body-Default, 16px);
+  line-height: var(--Text-Body-Default-line-height, 24px);
+  opacity: 0.9;
+}
+
+@media (max-width: 1200px) {
+  .section-how__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-how__grid {
+    grid-template-columns: 1fr;
+  }
+  
+}

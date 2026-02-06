@@ -1,0 +1,62 @@
+/* PrimaryButton scoped styles based on Figma design
+   - Primary color: #dd0b5f
+   - Hover color: #3e1c2e
+   - Text color: #fff5ee
+   - Border-radius: 31px
+*/
+:root {
+  --primary-button-bg: #dd0b5f;
+  --primary-button-hover: #3e1c2e;
+  --primary-button-text: #fff5ee;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 31px;
+  background-color: var(--Background-Primary-button);
+  color: var(--Foreground-Primary-button-text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 160ms ease-in-out, transform 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.primary-button:focus {
+  outline: 3px solid rgba(221, 11, 95, 0.18);
+  outline-offset: 2px;
+}
+
+.primary-button:active {
+  transform: translateY(1px);
+}
+
+.primary-button__label {
+  display: inline-block;
+}
+
+.primary-button--small {
+  padding: 10px 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.primary-button--large {
+  padding: 16px 45px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.primary-button:hover {
+  background-color: var(--Background-Primary-hover);
+}
+
+/* Darker hover for large to match Figma contrast */
+.primary-button--large:hover {
+  background-color: var(--Background-Primary-hover);
+}/*# sourceMappingURL=PrimaryButton.css.map */
